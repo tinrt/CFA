@@ -1,0 +1,10 @@
+id,name,is_visit,is_receive,is_active,sort_order,created_at,modified_at,created_by,modified_by
+4,Weekend Snack Pack,False,True,True,0,2023-12-05 07:53:05,2023-12-05 08:46:26,97021,97021
+5,Fruit Cup (individual serving) (96 ct) Case,False,True,True,4,2023-12-05 08:08:05,2023-12-05 08:55:53,97021,97021
+6,Milk Box (48 ct) Case,False,True,True,1,2023-12-05 08:14:02,2023-12-05 08:15:38,97021,97021
+7,Juice Box (individual serving) (24 ct) Case,False,True,True,3,2023-12-05 08:15:23,2023-12-05 08:55:53,97021,97021
+8,"Cereal (cold, individual serving) (96 ct) Case",False,True,True,2,2023-12-05 08:17:09,2023-12-05 08:17:54,97021,97021
+9,Chef Boyardee (individual serving) (12 ct) Case,False,True,True,5,2023-12-05 08:30:07,2023-12-05 08:55:53,97021,97021
+10,Granola or Nutrigrain Bar (48 ct) Case,False,True,True,7,2023-12-05 08:36:56,2023-12-07 09:13:11,97021,97021
+11,Zip-Top Bag (gallon) (630 ct) Case,False,True,True,6,2023-12-05 08:43:38,2023-12-07 09:13:11,97021,97021
+13,SFPP Green Beans (24 ct) Case,False,True,True,8,2023-12-07 09:13:47,2023-12-07 09:16:49,97021,97021

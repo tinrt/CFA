@@ -1,0 +1,11 @@
+id,name,acronym,background_color,symbol_type,icon,sort_order,is_filterable,created_by,modified_by,created_at,modified_at,is_store,is_receive,is_visit,is_exclusive
+10,Vegetarian,VEG,#4CAF50CC,,,0,True,97021,97021,2023-07-24 08:28:06,2023-07-24 08:47:53,False,True,True,False
+11,Gluten Free,GLF,#FFC107,,,1,False,97021,97021,2023-07-24 08:28:47,2023-12-05 10:21:05,True,True,True,False
+12,Microwave Only,MIC,#C6A9F9D9,,,2,False,97021,97021,2023-07-24 08:29:44,2023-08-09 13:25:21,True,True,True,False
+13,Baby (age 0-4) in Household,BAB,#7CF0FFB3,,,3,False,97021,115604,2023-07-24 08:32:37,2024-07-25 08:11:42,False,False,True,False
+14,Child (5-17 Years) in Household,KID,#FFEB3BF2,,,4,False,97021,97021,2023-07-24 08:34:32,2024-02-07 12:48:21,False,False,False,False
+15,Senior (60+ Years) in Household,SEN,#C6C6C6E8,,,5,False,97021,97021,2023-07-24 08:35:57,2024-02-07 12:47:41,False,False,False,False
+16,Needs Adult Briefs,BRI,#FFFFFF,,,6,False,97021,97021,2023-07-24 08:37:06,2024-02-07 12:47:36,False,False,False,False
+17,Pet in Household,PET,#DA8B5BDE,,,7,False,97021,97021,2023-07-24 08:37:46,2024-02-07 12:47:30,False,False,False,False
+18,USDA,USD,#FFEB3BF2,,,8,False,97021,97021,2023-12-05 10:18:53,2024-02-07 12:44:54,False,False,False,False
+19,SFPP,SFP,#FFC107,,,9,False,97021,97021,2023-12-05 10:19:29,2024-02-07 12:47:23,False,False,False,False

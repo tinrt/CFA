@@ -1,0 +1,358 @@
+Database Structure for defaultdb
+==================================================
+
+Table: client_visit
+   id (integer) NOT NULL
+   orig_client_id (integer) NULL
+   orig_visit_id (integer) NULL
+   orig_registration_id (integer) NULL
+   orig_address_id (integer) NULL
+   orig_credit_tier_id (integer) NULL
+   orig_deliveryRoute_id (integer) NULL
+   orig_location_id (integer) NULL
+   visit_datetime (timestamp without time zone) NULL
+   visit_type (character varying) NULL
+   location (character varying) NULL
+   comment (text) NULL
+   visit_signature_data (text) NULL
+   pending (boolean) NULL
+   is_fulfilled (boolean) NULL
+   visit_status (character varying) NULL
+   delivery_route (character varying) NULL
+   is_storefront_created (boolean) NULL
+   is_cron_created (boolean) NULL
+   is_template_created (boolean) NULL
+   client_account (character varying) NULL
+   client_since (date) NULL
+   client_first_visit (date) NULL
+   reg_datetime (timestamp without time zone) NULL
+   reg_signature_data (text) NULL
+   client_first (character varying) NULL
+   client_middle (character varying) NULL
+   client_last (character varying) NULL
+   client_phone (character varying) NULL
+   client_email (character varying) NULL
+   street_address (character varying) NULL
+   unit_no (character varying) NULL
+   city (character varying) NULL
+   county (character varying) NULL
+   state (character varying) NULL
+   country (character varying) NULL
+   postal_code (character varying) NULL
+   inventory_credit_tier (character varying) NULL
+   credit_total (integer) NULL
+   visit_created_at (timestamp without time zone) NULL
+   visit_modified_at (timestamp without time zone) NULL
+   visit_created_by (integer) NULL
+   visit_modified_by (integer) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   organization_id (integer) NULL
+   member_count (integer) NULL
+   business_name (character varying) NULL
+   Rows: 91000
+
+Table: inventory_group
+   id (integer) NOT NULL
+   name (character varying) NULL
+   is_visit (boolean) NULL
+   is_receive (boolean) NULL
+   is_active (boolean) NULL
+   sort_order (integer) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   Rows: 9
+
+Table: inventory_group_item
+   id (integer) NOT NULL
+   inventory_group_id (integer) NULL
+   inventory_item_id (integer) NULL
+   quantity (integer) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   Rows: 17
+
+Table: inventory_group_location_manifest
+   id (integer) NOT NULL
+   inventory_group_id (integer) NULL
+   location_id (integer) NULL
+   quantity (integer) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   Rows: 0
+
+Table: inventory_item
+   id (integer) NOT NULL
+   inventory_item_type_id (integer) NULL
+   item_number (character varying) NULL
+   name (character varying) NULL
+   value (numeric) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   weight (numeric) NULL
+   unit (character varying) NULL
+   sort_order (integer) NULL
+   is_active (boolean) NULL
+   is_visit (boolean) NULL
+   description (text) NULL
+   limit_per_visit (numeric) NULL
+   symbol_type (character varying) NULL
+   icon (character varying) NULL
+   credit_price (numeric) NULL
+   is_store (boolean) NULL
+   background_color (character varying) NULL
+   is_kiosk (boolean) NULL
+   out_of_stock_threshold (integer) NULL
+   reorder_threshold (integer) NULL
+   import_id (character varying) NULL
+   agency_item_number (character varying) NULL
+   temperature (character varying) NULL
+   is_locker (boolean) NULL
+   show_locker (character varying) NULL
+   default_tare_weight (numeric) NULL
+   choice_value (integer) NULL
+   Rows: 716
+
+Table: inventory_item_code
+   id (integer) NOT NULL
+   inventory_item_id (integer) NULL
+   code_number (character varying) NULL
+   description (character varying) NULL
+   createdBy (integer) NULL
+   modifiedBy (integer) NULL
+   modifiedAt (timestamp without time zone) NULL
+   createdAt (timestamp without time zone) NULL
+   inventory_group_id (integer) NULL
+   Rows: 158
+
+Table: inventory_item_location_manifest
+   id (integer) NOT NULL
+   inventory_item_id (integer) NULL
+   location_id (integer) NULL
+   quantity (numeric) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   Rows: 2118
+
+Table: inventory_item_tag
+   id (integer) NOT NULL
+   name (character varying) NULL
+   acronym (character varying) NULL
+   background_color (character varying) NULL
+   symbol_type (character varying) NULL
+   icon (character varying) NULL
+   sort_order (integer) NULL
+   is_filterable (boolean) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   is_store (boolean) NULL
+   is_receive (boolean) NULL
+   is_visit (boolean) NULL
+   is_exclusive (boolean) NULL
+   Rows: 11
+
+Table: inventory_item_type
+   id (integer) NOT NULL
+   name (character varying) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   limit_per_visit (numeric) NULL
+   symbol_type (character varying) NULL
+   icon (character varying) NULL
+   background_color (character varying) NULL
+   sort_order (integer) NULL
+   weight_calc_type (character varying) NULL
+   Rows: 26
+
+Table: inventory_items_inventory_item_tags
+   inventoryitem_id (integer) NOT NULL
+   inventoryitemtag_id (integer) NOT NULL
+   Rows: 116
+
+Table: inventory_receive
+   id (integer) NOT NULL
+   inventory_source_id (integer) NULL
+   to_location_id (integer) NULL
+   from_location_id (integer) NULL
+   receive_type (character varying) NULL
+   receive_datetime (timestamp without time zone) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   comment (text) NULL
+   to_inventory_bin_id (integer) NULL
+   from_inventory_bin_id (integer) NULL
+   recipient_inventory_source_id (integer) NULL
+   group_edits_enabled (boolean) NULL
+   is_system (boolean) NULL
+   Rows: 32043
+
+Table: inventory_receive_group
+   id (integer) NOT NULL
+   inventory_receive_id (integer) NULL
+   inventory_group_id (integer) NULL
+   quantity (integer) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   comment (text) NULL
+   Rows: 0
+
+Table: inventory_receive_item
+   id (integer) NOT NULL
+   inventory_receive_id (integer) NULL
+   inventory_item_id (integer) NULL
+   quantity (numeric) NULL
+   unitValue (integer) NULL
+   unitWeight (integer) NULL
+   totalValue (integer) NULL
+   totalWeight (integer) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   comment (text) NULL
+   inventory_receive_group_id (integer) NULL
+   Rows: 28134
+
+Table: inventory_source
+   id (integer) NOT NULL
+   name (character varying) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   contact_first_name (character varying) NULL
+   contact_last_name (character varying) NULL
+   phone_number (character varying) NULL
+   email_address (character varying) NULL
+   street_address (character varying) NULL
+   unit_no (character varying) NULL
+   city (character varying) NULL
+   county (character varying) NULL
+   state (character varying) NULL
+   country (character varying) NULL
+   postal_code (character varying) NULL
+   import_id (character varying) NULL
+   source_type (character varying) NULL
+   is_active (boolean) NULL
+   sort_order (integer) NULL
+   Rows: 239
+
+Table: location
+   id (integer) NOT NULL
+   name (character varying) NULL
+   created_at (timestamp without time zone) NULL
+   modified_at (timestamp without time zone) NULL
+   created_by (integer) NULL
+   modified_by (integer) NULL
+   street_address (character varying) NULL
+   unit_no (character varying) NULL
+   city (character varying) NULL
+   county (character varying) NULL
+   state (character varying) NULL
+   country (character varying) NULL
+   postal_code (character varying) NULL
+   parent_inventory_location_id (integer) NULL
+   sortOrder (integer) NULL
+   is_active (boolean) NULL
+   contact_first_name (character varying) NULL
+   contact_last_name (character varying) NULL
+   contact_email (character varying) NULL
+   contact_phone (character varying) NULL
+   location_group_id (integer) NULL
+   external_api_id (character varying) NULL
+   Rows: 10
+
+Table: visit_answer
+   id (integer) NOT NULL
+   client_visit_id (integer) NULL
+   visit_member_id (integer) NULL
+   orig_question_answer_id (integer) NULL
+   orig_question_id (integer) NULL
+   orig_question_block_id (integer) NULL
+   orig_picklist__entry_id (integer) NULL
+   question_type (character varying) NULL
+   question (character varying) NULL
+   question_block_name (character varying) NULL
+   is_privileged (boolean) NULL
+   datatype (character varying) NULL
+   answer (character varying) NULL
+   organization_id (integer) NULL
+   orig_client_id (integer) NULL
+   Rows: 1600227
+
+Table: visit_budget_item
+   id (integer) NOT NULL
+   client_visit_id (integer) NULL
+   visit_member_id (integer) NULL
+   orig_budget_item_id (integer) NULL
+   budget_item_type (character varying) NULL
+   description (character varying) NULL
+   derived_annual_amount (character varying) NULL
+   organization_id (integer) NULL
+   orig_client_id (integer) NULL
+   Rows: 60549
+
+Table: visit_item
+   id (integer) NOT NULL
+   client_visit_id (integer) NULL
+   visit_member_id (integer) NULL
+   orig_visit_item_id (integer) NULL
+   orig_inventory_item_id (integer) NULL
+   name (character varying) NULL
+   comment (text) NULL
+   quantity (integer) NULL
+   unitValue (integer) NULL
+   unitWeight (integer) NULL
+   totalValue (integer) NULL
+   totalWeight (integer) NULL
+   unit_credit_price (integer) NULL
+   total_credit_price (integer) NULL
+   organization_id (integer) NULL
+   orig_inventory_item_type_id (integer) NULL
+   itemType (text) NULL
+   orig_client_id (integer) NULL
+   Rows: 13823
+
+Table: visit_member
+   id (integer) NOT NULL
+   client_visit_id (integer) NULL
+   orig_hhm_id (integer) NULL
+   first_name (character varying) NULL
+   last_name (character varying) NULL
+   middle_name (character varying) NULL
+   title (character varying) NULL
+   gender (character varying) NULL
+   pronouns (character varying) NULL
+   birthday (date) NULL
+   is_primary (boolean) NULL
+   relationship (character varying) NULL
+   id_number (character varying) NULL
+   id_type (character varying) NULL
+   organization_id (integer) NULL
+   email_address (character varying) NULL
+   phone_number (character varying) NULL
+   orig_client_id (integer) NULL
+   Rows: 244665
+
+==================================================
+Done.

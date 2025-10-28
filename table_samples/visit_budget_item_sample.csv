@@ -1,0 +1,11 @@
+id,client_visit_id,visit_member_id,orig_budget_item_id,budget_item_type,description,derived_annual_amount,organization_id,orig_client_id
+222009,119724,,8,Income,Monthly Household Income (Gross/Before Tax) $,30000,745,153
+222010,119739,,7141,Income,Monthly Household Income (Gross/Before Tax) $,10896,745,161
+222011,119740,,12,Income,Monthly Household Income (Gross/Before Tax) $,26400,745,176
+222012,119747,,16,Income,Monthly Household Income (Gross/Before Tax) $,43200,745,223
+222013,119777,,18,Income,Monthly Household Income (Gross/Before Tax) $,20400,745,238
+222014,119796,,23,Income,Monthly Household Income (Gross/Before Tax) $,28800,745,286
+222015,119817,,50,Income,Monthly Household Income (Gross/Before Tax) $,23808,745,388
+222016,119823,,26,Income,Monthly Household Income (Gross/Before Tax) $,12000,745,394
+222017,119845,,55,Income,Monthly Household Income (Gross/Before Tax) $,12000,745,396
+222018,119847,,40,Income,Monthly Household Income (Gross/Before Tax) $,39456,745,451
