@@ -5,7 +5,7 @@ import pandas as pd
 import folium
 from dotenv import load_dotenv
 from geopy.geocoders import Nominatim
-from geopy.exc import GeocoderUnavailable, GeocoderTimedOut
+from geopy.extra.rate_limiter import RateLimiter
 from sqlalchemy import create_engine
 
 load_dotenv()
@@ -16,11 +16,9 @@ DB_NAME = os.getenv("DB_NAME")
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 
-print("Connecting to database...")
 db_url = f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(db_url)
 
-print("Running query...")
 query = """
 SELECT
     city,
@@ -32,61 +30,42 @@ WHERE state ILIKE 'NJ'
 AND city IS NOT NULL;
 """
 df = pd.read_sql(query, engine)
-print(f"Query complete: {len(df)} rows")
 
-print("Aggregating data...")
 summary = (
     df.groupby(["city", "county", "state"], dropna=False)
       .agg(records=("orig_client_id", "count"),
            unique_clients=("orig_client_id", pd.Series.nunique))
       .reset_index()
 )
-print("Aggregation done")
 
-print("Preparing geocoder...")
-geolocator = Nominatim(user_agent="nj_map", timeout=10)
-city_coords = {}
 cache_file = "city_coords_cache.json"
-
 if os.path.exists(cache_file):
     with open(cache_file, "r", encoding="utf-8") as f:
         city_coords = json.load(f)
-
-unique_cities = summary["city"].unique()
-print(f"Total cities to check: {len(unique_cities)}")
-
-count = 0
-for city in unique_cities:
-    count += 1
-    if city in city_coords:
-        continue
-    address = f"{city}, NJ"
-    try:
-        loc = geolocator.geocode(address)
+else:
+    geolocator = Nominatim(user_agent="nj_map", timeout=10)
+    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+    city_coords = {}
+    unique_cities = summary["city"].unique()
+    for i, city in enumerate(unique_cities, 1):
+        loc = geocode(f"{city}, NJ")
         if loc:
             city_coords[city] = {"lat": loc.latitude, "lon": loc.longitude}
         else:
             city_coords[city] = {"lat": None, "lon": None}
-    except (GeocoderTimedOut, GeocoderUnavailable):
-        city_coords[city] = {"lat": None, "lon": None}
-    if count % 10 == 0:
-        print(f"Processed {count}/{len(unique_cities)} cities")
-    time.sleep(1)
+        if i % 10 == 0:
+            print(f"Geocoded {i}/{len(unique_cities)}")
+    with open(cache_file, "w", encoding="utf-8") as f:
+        json.dump(city_coords, f, indent=4, ensure_ascii=False)
 
-with open(cache_file, "w", encoding="utf-8") as f:
-    json.dump(city_coords, f, indent=4, ensure_ascii=False)
-
-print("Merging coordinates...")
 summary["latitude"] = summary["city"].map(lambda c: city_coords.get(c, {}).get("lat"))
 summary["longitude"] = summary["city"].map(lambda c: city_coords.get(c, {}).get("lon"))
 summary = summary.dropna(subset=["latitude", "longitude"])
-print(f"Valid coordinates: {len(summary)}")
 
-print("Building map...")
 nj_center = [40.0583, -74.4057]
 m = folium.Map(location=nj_center, zoom_start=8, tiles="CartoDB positron")
 
-for i, row in summary.iterrows():
+for _, row in summary.iterrows():
     popup = (
         f"<b>{row['city']}, NJ</b><br>"
         f"Records: {row['records']}<br>"
@@ -100,8 +79,6 @@ for i, row in summary.iterrows():
         fill_opacity=0.6,
         popup=popup
     ).add_to(m)
-    if i % 10 == 0:
-        print(f"Added {i}/{len(summary)} markers")
 
 m.save("nj_client_map.html")
-print("Map saved to nj_client_map.html")
+

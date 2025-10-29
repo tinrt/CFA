@@ -1,0 +1,718 @@
+{
+    "Allendale": {
+        "lat": 41.0413199,
+        "lon": -74.1291407
+    },
+    "Alpine": {
+        "lat": 40.94855,
+        "lon": -73.9281139
+    },
+    "Bayonne": {
+        "lat": 40.6687141,
+        "lon": -74.1143091
+    },
+    "Belleville": {
+        "lat": 40.7937116,
+        "lon": -74.1501438
+    },
+    "Bergebfield": {
+        "lat": null,
+        "lon": null
+    },
+    "Bergenfield": {
+        "lat": 40.9275987,
+        "lon": -73.9973608
+    },
+    "BergenfieldBergenfield": {
+        "lat": null,
+        "lon": null
+    },
+    "Bernards": {
+        "lat": 40.676207,
+        "lon": -74.5633548
+    },
+    "Bloomfield": {
+        "lat": 40.7934789,
+        "lon": -74.1979277
+    },
+    "Bloomingdale": {
+        "lat": 41.002147,
+        "lon": -74.3263326
+    },
+    "Bogota": {
+        "lat": 40.8762106,
+        "lon": -74.0298621
+    },
+    "Butler": {
+        "lat": 41.0037087,
+        "lon": -74.3415394
+    },
+    "Carlstadt": {
+        "lat": 40.8403778,
+        "lon": -74.0906974
+    },
+    "Carteret": {
+        "lat": 40.5773266,
+        "lon": -74.2282005
+    },
+    "City of Orange": {
+        "lat": 40.7709499,
+        "lon": -74.2264601
+    },
+    "Clark": {
+        "lat": 40.6233995,
+        "lon": -74.3148279
+    },
+    "Cliffside Park": {
+        "lat": 40.8214894,
+        "lon": -73.9876388
+    },
+    "Clifton": {
+        "lat": 40.8584328,
+        "lon": -74.1637553
+    },
+    "Closter": {
+        "lat": 40.9731536,
+        "lon": -73.9615262
+    },
+    "Cresskill": {
+        "lat": 40.9414874,
+        "lon": -73.9593041
+    },
+    "Demarest": {
+        "lat": 40.9573205,
+        "lon": -73.9634708
+    },
+    "Dumont": {
+        "lat": 40.9406541,
+        "lon": -73.9968051
+    },
+    "East Orange": {
+        "lat": 40.7642404,
+        "lon": -74.215011
+    },
+    "East Rutherford": {
+        "lat": 40.833989,
+        "lon": -74.0970865
+    },
+    "Edgewater": {
+        "lat": 40.8270448,
+        "lon": -73.975694
+    },
+    "Edison": {
+        "lat": 40.518157,
+        "lon": -74.4113926
+    },
+    "Elizabeth": {
+        "lat": 40.6639916,
+        "lon": -74.2107006
+    },
+    "Elmwood  Park": {
+        "lat": 40.9074237,
+        "lon": -74.1183543
+    },
+    "Elmwood Park": {
+        "lat": 40.9074237,
+        "lon": -74.1183543
+    },
+    "Elmwood park": {
+        "lat": 40.9074237,
+        "lon": -74.1183543
+    },
+    "Emerson": {
+        "lat": 40.976209,
+        "lon": -74.0262505
+    },
+    "Englewood": {
+        "lat": 40.8929329,
+        "lon": -73.9726508
+    },
+    "Englewood Cliffs": {
+        "lat": 40.8853773,
+        "lon": -73.9523597
+    },
+    "FAIRVIEW": {
+        "lat": 40.3646325,
+        "lon": -74.0788603
+    },
+    "FORT LEE": {
+        "lat": 40.8509333,
+        "lon": -73.9701382
+    },
+    "Fair Lawn": {
+        "lat": 40.9358397,
+        "lon": -74.1175058
+    },
+    "Fairlawn": {
+        "lat": 40.9466611,
+        "lon": -74.1372429
+    },
+    "Fairview": {
+        "lat": 40.3646325,
+        "lon": -74.0788603
+    },
+    "Fort Lee": {
+        "lat": 40.8509333,
+        "lon": -73.9701382
+    },
+    "Fort LeeFort Lee": {
+        "lat": null,
+        "lon": null
+    },
+    "Franklin Lakes": {
+        "lat": 41.0167639,
+        "lon": -74.2057012
+    },
+    "Garfield": {
+        "lat": 40.8814882,
+        "lon": -74.113198
+    },
+    "Garfield Garfield": {
+        "lat": 40.8726332,
+        "lon": -74.1114681
+    },
+    "Garfield+-": {
+        "lat": 40.8814882,
+        "lon": -74.113198
+    },
+    "GarfieldGarfield": {
+        "lat": null,
+        "lon": null
+    },
+    "Glen Rock": {
+        "lat": 40.9628758,
+        "lon": -74.1329208
+    },
+    "Guttenberg": {
+        "lat": 40.7920454,
+        "lon": -74.0037505
+    },
+    "HACKENSACK": {
+        "lat": 40.8871438,
+        "lon": -74.0410865
+    },
+    "Hackensack": {
+        "lat": 40.8871438,
+        "lon": -74.0410865
+    },
+    "HackensackHackensack": {
+        "lat": null,
+        "lon": null
+    },
+    "Haledon": {
+        "lat": 40.935654,
+        "lon": -74.186256
+    },
+    "Harrington Park": {
+        "lat": 40.9837089,
+        "lon": -73.9798601
+    },
+    "Hasbrouck Height": {
+        "lat": null,
+        "lon": null
+    },
+    "Hasbrouck Heights": {
+        "lat": 40.8579293,
+        "lon": -74.0816693
+    },
+    "Hasbrouck heights": {
+        "lat": 40.8579293,
+        "lon": -74.0816693
+    },
+    "Haskell": {
+        "lat": 41.0284304,
+        "lon": -74.2959823
+    },
+    "Haworth": {
+        "lat": 40.9609315,
+        "lon": -73.9901383
+    },
+    "HawthornE": {
+        "lat": 40.9492649,
+        "lon": -74.1537549
+    },
+    "Hawthorne": {
+        "lat": 40.9492649,
+        "lon": -74.1537549
+    },
+    "Hewitt": {
+        "lat": 41.1611965,
+        "lon": -74.3337278
+    },
+    "Hewitt-Haskell": {
+        "lat": null,
+        "lon": null
+    },
+    "Hillsdale": {
+        "lat": 41.0025975,
+        "lon": -74.0404175
+    },
+    "Ho-Ho-Kus": {
+        "lat": 40.9976524,
+        "lon": -74.110284
+    },
+    "Hoboken": {
+        "lat": 40.7433066,
+        "lon": -74.0323752
+    },
+    "Jersey City": {
+        "lat": 40.7215682,
+        "lon": -74.047455
+    },
+    "Kearny": {
+        "lat": 40.7684342,
+        "lon": -74.1454214
+    },
+    "Kinnelon": {
+        "lat": 41.0017644,
+        "lon": -74.367096
+    },
+    "LODI": {
+        "lat": 40.8823215,
+        "lon": -74.0831971
+    },
+    "Lawrence street": {
+        "lat": 40.2316647,
+        "lon": -74.7427491
+    },
+    "Leonia": {
+        "lat": 40.8617353,
+        "lon": -73.9880495
+    },
+    "Lindhurst": {
+        "lat": null,
+        "lon": null
+    },
+    "Little Falls": {
+        "lat": 40.8813513,
+        "lon": -74.228185
+    },
+    "Little Falls Township": {
+        "lat": 39.7692583,
+        "lon": -74.2507928
+    },
+    "Little Ferry": {
+        "lat": 40.8528777,
+        "lon": -74.0420848
+    },
+    "LodI": {
+        "lat": 40.8823215,
+        "lon": -74.0831971
+    },
+    "Lodi": {
+        "lat": 40.8823215,
+        "lon": -74.0831971
+    },
+    "Lyndhurst": {
+        "lat": 40.8120247,
+        "lon": -74.1242816
+    },
+    "Mahwah": {
+        "lat": 41.0887072,
+        "lon": -74.1437552
+    },
+    "Maywood": {
+        "lat": 40.902599,
+        "lon": -74.0618074
+    },
+    "Midland Park": {
+        "lat": 40.9893112,
+        "lon": -74.1401008
+    },
+    "Montvale": {
+        "lat": 41.0467635,
+        "lon": -74.0229173
+    },
+    "Montville": {
+        "lat": 40.9148209,
+        "lon": -74.383763
+    },
+    "Moonachie": {
+        "lat": 40.8412112,
+        "lon": -74.0451405
+    },
+    "NA": {
+        "lat": -22.9504387,
+        "lon": 14.5272601
+    },
+    "New Milf": {
+        "lat": null,
+        "lon": null
+    },
+    "New Milford": {
+        "lat": 40.9350986,
+        "lon": -74.0190281
+    },
+    "New MilfordNew Milford": {
+        "lat": null,
+        "lon": null
+    },
+    "Newark": {
+        "lat": 40.735657,
+        "lon": -74.1723667
+    },
+    "Nj": {
+        "lat": 40.7651803,
+        "lon": -74.0144696
+    },
+    "North Arlington": {
+        "lat": 40.788434,
+        "lon": -74.1331988
+    },
+    "North Bergen": {
+        "lat": 40.8042674,
+        "lon": -74.012084
+    },
+    "North Bergen Township": {
+        "lat": 40.2869547,
+        "lon": -74.411558
+    },
+    "North Haledon": {
+        "lat": 40.9550981,
+        "lon": -74.1859782
+    },
+    "Northvale": {
+        "lat": 41.0066649,
+        "lon": -73.9490627
+    },
+    "Norwood": {
+        "lat": 40.9981532,
+        "lon": -73.9618039
+    },
+    "Nutley": {
+        "lat": 40.8223223,
+        "lon": -74.1598663
+    },
+    "Oak Ridge": {
+        "lat": 41.02933,
+        "lon": -74.5010702
+    },
+    "Oakland": {
+        "lat": 41.0220483,
+        "lon": -74.2430988
+    },
+    "OaklandOakland": {
+        "lat": null,
+        "lon": null
+    },
+    "Old Tappan": {
+        "lat": 41.0106971,
+        "lon": -73.9911073
+    },
+    "Oradell": {
+        "lat": 40.9543943,
+        "lon": -74.0308504
+    },
+    "PARAMUS": {
+        "lat": 40.9452911,
+        "lon": -74.0735899
+    },
+    "PASSAIC": {
+        "lat": 41.0461864,
+        "lon": -74.3177933
+    },
+    "Palisade Park": {
+        "lat": 40.8116784,
+        "lon": -73.9927402
+    },
+    "Palisades Park": {
+        "lat": 40.8481556,
+        "lon": -73.997639
+    },
+    "Palisades ParkNew Jersy": {
+        "lat": null,
+        "lon": null
+    },
+    "Paramus": {
+        "lat": 40.9452911,
+        "lon": -74.0735899
+    },
+    "Park Ridge": {
+        "lat": 41.0375969,
+        "lon": -74.0406956
+    },
+    "Parsippany-Troy Hills": {
+        "lat": 40.8646542,
+        "lon": -74.4157768
+    },
+    "Passaic": {
+        "lat": 41.0461864,
+        "lon": -74.3177933
+    },
+    "Passic": {
+        "lat": null,
+        "lon": null
+    },
+    "Paterson": {
+        "lat": 40.9167654,
+        "lon": -74.171811
+    },
+    "Pequeño Ferry": {
+        "lat": 40.7312445,
+        "lon": -74.1619049
+    },
+    "Perth Amboy": {
+        "lat": 40.5133218,
+        "lon": -74.2724241
+    },
+    "Plainsboro Township": {
+        "lat": 40.3334409,
+        "lon": -74.6004341
+    },
+    "Pompton Lakes": {
+        "lat": 41.0053413,
+        "lon": -74.2905713
+    },
+    "Prospect Park": {
+        "lat": 40.9370428,
+        "lon": -74.1743111
+    },
+    "Prospect park": {
+        "lat": 40.9370428,
+        "lon": -74.1743111
+    },
+    "RIDGEFIELD PK": {
+        "lat": 40.8570442,
+        "lon": -74.0215285
+    },
+    "Ramsey": {
+        "lat": 41.0573188,
+        "lon": -74.1409771
+    },
+    "Redgefield": {
+        "lat": null,
+        "lon": null
+    },
+    "Ridgefie": {
+        "lat": null,
+        "lon": null
+    },
+    "Ridgefield": {
+        "lat": 40.8342669,
+        "lon": -74.0087505
+    },
+    "Ridgefield Park": {
+        "lat": 40.8570442,
+        "lon": -74.0215285
+    },
+    "Ridgefield park": {
+        "lat": 40.8570442,
+        "lon": -74.0215285
+    },
+    "Ridgewood": {
+        "lat": 40.9796683,
+        "lon": -74.1194403
+    },
+    "Ringwood": {
+        "lat": 41.113429,
+        "lon": -74.2454254
+    },
+    "River Edge": {
+        "lat": 40.9287098,
+        "lon": -74.0398622
+    },
+    "River Vale": {
+        "lat": 40.9953754,
+        "lon": -74.0120832
+    },
+    "Rivervale": {
+        "lat": 41.0095418,
+        "lon": -74.01125
+    },
+    "Rochell Park": {
+        "lat": null,
+        "lon": null
+    },
+    "Rochelle Park": {
+        "lat": 40.9092993,
+        "lon": -74.0733086
+    },
+    "Roselle Park": {
+        "lat": 40.6645469,
+        "lon": -74.2643133
+    },
+    "Rutherford": {
+        "lat": 40.826489,
+        "lon": -74.1068091
+    },
+    "Saddle Brook": {
+        "lat": 40.898988,
+        "lon": -74.0926418
+    },
+    "Saddle River": {
+        "lat": 41.0317637,
+        "lon": -74.1020866
+    },
+    "Saddle brook": {
+        "lat": 40.898988,
+        "lon": -74.0926418
+    },
+    "Secaucus": {
+        "lat": 40.7899291,
+        "lon": -74.0566735
+    },
+    "South Amboy": {
+        "lat": 40.4821114,
+        "lon": -74.2828828
+    },
+    "South Hackensack": {
+        "lat": 40.8698546,
+        "lon": -74.0500662
+    },
+    "Sparta": {
+        "lat": 41.0401567,
+        "lon": -74.6310081
+    },
+    "Sussex": {
+        "lat": 41.133372,
+        "lon": -74.6930393
+    },
+    "Teanec": {
+        "lat": null,
+        "lon": null
+    },
+    "Teaneck": {
+        "lat": 40.8860164,
+        "lon": -74.0072568
+    },
+    "TeaneckTeaneck": {
+        "lat": null,
+        "lon": null
+    },
+    "Teaneckeaneck": {
+        "lat": null,
+        "lon": null
+    },
+    "Tenafly": {
+        "lat": 40.9253766,
+        "lon": -73.9629154
+    },
+    "Teterboro": {
+        "lat": 40.8598219,
+        "lon": -74.0593075
+    },
+    "Totowa": {
+        "lat": 40.9050988,
+        "lon": -74.2098679
+    },
+    "Township of Washington": {
+        "lat": 40.9884843,
+        "lon": -74.0652437
+    },
+    "Trenton": {
+        "lat": 40.2203074,
+        "lon": -74.7659
+    },
+    "Union": {
+        "lat": 40.6652251,
+        "lon": -74.3045277
+    },
+    "Union City": {
+        "lat": 40.7795455,
+        "lon": -74.0237512
+    },
+    "Upper Saddle River": {
+        "lat": 41.0585352,
+        "lon": -74.0984769
+    },
+    "Verona": {
+        "lat": 40.829822,
+        "lon": -74.2401466
+    },
+    "WEEHAWKEN": {
+        "lat": 40.7695457,
+        "lon": -74.0204177
+    },
+    "WOODRIDGE": {
+        "lat": 39.8963327,
+        "lon": -74.8381765
+    },
+    "Waldwick": {
+        "lat": 41.0109281,
+        "lon": -74.1182019
+    },
+    "Wallington": {
+        "lat": 40.8531553,
+        "lon": -74.1137537
+    },
+    "Wanaque": {
+        "lat": 41.0381526,
+        "lon": -74.2940378
+    },
+    "Wayne": {
+        "lat": 40.9491723,
+        "lon": -74.2376802
+    },
+    "Weehawken": {
+        "lat": 40.7695457,
+        "lon": -74.0204177
+    },
+    "West Milford": {
+        "lat": 41.1312069,
+        "lon": -74.3673748
+    },
+    "West New York": {
+        "lat": 40.7856117,
+        "lon": -74.0093129
+    },
+    "West new york": {
+        "lat": 40.7856117,
+        "lon": -74.0093129
+    },
+    "Westwood": {
+        "lat": 40.9912087,
+        "lon": -74.0326395
+    },
+    "Wood-Ridge": {
+        "lat": 40.8456555,
+        "lon": -74.0879195
+    },
+    "Woodcliff Lake": {
+        "lat": 41.0234304,
+        "lon": -74.0665297
+    },
+    "Woodland Park": {
+        "lat": 40.8893288,
+        "lon": -74.1969657
+    },
+    "Wyckoff": {
+        "lat": 41.0095417,
+        "lon": -74.1729222
+    },
+    "englewood": {
+        "lat": 40.8929329,
+        "lon": -73.9726508
+    },
+    "garfield": {
+        "lat": 40.8814882,
+        "lon": -74.113198
+    },
+    "hackensack": {
+        "lat": 40.8871438,
+        "lon": -74.0410865
+    },
+    "lodi": {
+        "lat": 40.8823215,
+        "lon": -74.0831971
+    },
+    "maywood": {
+        "lat": 40.902599,
+        "lon": -74.0618074
+    },
+    "oak ridge": {
+        "lat": 41.02933,
+        "lon": -74.5010702
+    },
+    "passaic": {
+        "lat": 41.0461864,
+        "lon": -74.3177933
+    },
+    "ridgefield": {
+        "lat": 40.8342669,
+        "lon": -74.0087505
+    },
+    "woodland park": {
+        "lat": 40.8893288,
+        "lon": -74.1969657
+    }
+}
