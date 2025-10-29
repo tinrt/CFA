@@ -1,0 +1,11 @@
+{
+    "table": "location",
+    "column": "created_at",
+    "total_records": 10,
+    "unique_days": 5,
+    "first_date": "2018-10-29",
+    "last_date": "2023-09-25",
+    "average_records_per_day": 2.0,
+    "peak_day": "2023-04-17",
+    "peak_count": 4
+}

@@ -1,0 +1,11 @@
+{
+    "table": "client_visit",
+    "column": "created_at",
+    "total_records": 1000,
+    "unique_days": 3,
+    "first_date": "2025-09-19",
+    "last_date": "2025-09-22",
+    "average_records_per_day": 333.33,
+    "peak_day": "2025-09-19",
+    "peak_count": 996
+}

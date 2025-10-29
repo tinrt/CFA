@@ -1,0 +1,11 @@
+{
+    "table": "inventory_receive_item",
+    "column": "created_at",
+    "total_records": 1000,
+    "unique_days": 29,
+    "first_date": "2024-03-07",
+    "last_date": "2024-06-12",
+    "average_records_per_day": 34.48,
+    "peak_day": "2024-04-16",
+    "peak_count": 106
+}

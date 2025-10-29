@@ -1,0 +1,11 @@
+,id,inventory_group_id,location_id,quantity,created_at,modified_at,created_by,modified_by
+count,0,0,0,0,0,0,0,0
+unique,0,0,0,0,,0,0,0
+top,,,,,,,,
+freq,,,,,,,,
+mean,,,,,,,,
+min,,,,,,,,
+25%,,,,,,,,
+50%,,,,,,,,
+75%,,,,,,,,
+max,,,,,,,,

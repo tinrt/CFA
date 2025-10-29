@@ -1,0 +1,4065 @@
+{
+    "client_visit": {
+        "shape": {
+            "rows": 1000,
+            "columns": 50
+        },
+        "columns": [
+            "id",
+            "orig_client_id",
+            "orig_visit_id",
+            "orig_registration_id",
+            "orig_address_id",
+            "orig_credit_tier_id",
+            "orig_deliveryRoute_id",
+            "orig_location_id",
+            "visit_datetime",
+            "visit_type",
+            "location",
+            "comment",
+            "visit_signature_data",
+            "pending",
+            "is_fulfilled",
+            "visit_status",
+            "delivery_route",
+            "is_storefront_created",
+            "is_cron_created",
+            "is_template_created",
+            "client_account",
+            "client_since",
+            "client_first_visit",
+            "reg_datetime",
+            "reg_signature_data",
+            "client_first",
+            "client_middle",
+            "client_last",
+            "client_phone",
+            "client_email",
+            "street_address",
+            "unit_no",
+            "city",
+            "county",
+            "state",
+            "country",
+            "postal_code",
+            "inventory_credit_tier",
+            "credit_total",
+            "visit_created_at",
+            "visit_modified_at",
+            "visit_created_by",
+            "visit_modified_by",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by",
+            "organization_id",
+            "member_count",
+            "business_name"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "orig_visit_id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "visit_created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 998,
+                "missing_%": 0.0
+            },
+            "orig_client_id": {
+                "dtype": "int64",
+                "unique_values": 966,
+                "missing_%": 0.0
+            },
+            "client_account": {
+                "dtype": "object",
+                "unique_values": 966,
+                "missing_%": 0.0
+            },
+            "orig_address_id": {
+                "dtype": "float64",
+                "unique_values": 940,
+                "missing_%": 3.0
+            },
+            "street_address": {
+                "dtype": "object",
+                "unique_values": 899,
+                "missing_%": 3.0
+            },
+            "client_phone": {
+                "dtype": "object",
+                "unique_values": 861,
+                "missing_%": 7.3
+            },
+            "client_email": {
+                "dtype": "object",
+                "unique_values": 531,
+                "missing_%": 44.8
+            },
+            "visit_modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 444,
+                "missing_%": 0.0
+            },
+            "client_last": {
+                "dtype": "object",
+                "unique_values": 405,
+                "missing_%": 0.0
+            },
+            "comment": {
+                "dtype": "object",
+                "unique_values": 390,
+                "missing_%": 48.6
+            },
+            "client_first": {
+                "dtype": "object",
+                "unique_values": 298,
+                "missing_%": 0.0
+            },
+            "visit_datetime": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 286,
+                "missing_%": 0.0
+            },
+            "unit_no": {
+                "dtype": "object",
+                "unique_values": 198,
+                "missing_%": 67.8
+            },
+            "orig_registration_id": {
+                "dtype": "float64",
+                "unique_values": 152,
+                "missing_%": 84.0
+            },
+            "reg_datetime": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 152,
+                "missing_%": 84.0
+            },
+            "visit_created_by": {
+                "dtype": "int64",
+                "unique_values": 120,
+                "missing_%": 0.0
+            },
+            "client_since": {
+                "dtype": "object",
+                "unique_values": 113,
+                "missing_%": 0.0
+            },
+            "postal_code": {
+                "dtype": "object",
+                "unique_values": 81,
+                "missing_%": 3.0
+            },
+            "city": {
+                "dtype": "object",
+                "unique_values": 77,
+                "missing_%": 3.0
+            },
+            "client_middle": {
+                "dtype": "object",
+                "unique_values": 29,
+                "missing_%": 96.1
+            },
+            "visit_modified_by": {
+                "dtype": "int64",
+                "unique_values": 25,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 25,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 25,
+                "missing_%": 0.0
+            },
+            "client_first_visit": {
+                "dtype": "object",
+                "unique_values": 22,
+                "missing_%": 0.0
+            },
+            "member_count": {
+                "dtype": "int64",
+                "unique_values": 13,
+                "missing_%": 0.0
+            },
+            "orig_location_id": {
+                "dtype": "int64",
+                "unique_values": 7,
+                "missing_%": 0.0
+            },
+            "location": {
+                "dtype": "object",
+                "unique_values": 7,
+                "missing_%": 0.0
+            },
+            "visit_type": {
+                "dtype": "object",
+                "unique_values": 6,
+                "missing_%": 0.0
+            },
+            "county": {
+                "dtype": "object",
+                "unique_values": 6,
+                "missing_%": 3.0
+            },
+            "state": {
+                "dtype": "object",
+                "unique_values": 2,
+                "missing_%": 3.0
+            },
+            "is_fulfilled": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "is_storefront_created": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "organization_id": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "credit_total": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "is_template_created": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "pending": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 56.7
+            },
+            "is_cron_created": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "orig_credit_tier_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "delivery_route": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "visit_status": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "visit_signature_data": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "orig_deliveryRoute_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "reg_signature_data": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "inventory_credit_tier": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "country": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "business_name": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "orig_client_id": 0.0,
+            "orig_visit_id": 0.0,
+            "orig_registration_id": 84.0,
+            "orig_address_id": 3.0,
+            "orig_credit_tier_id": 100.0,
+            "orig_deliveryRoute_id": 100.0,
+            "orig_location_id": 0.0,
+            "visit_datetime": 0.0,
+            "visit_type": 0.0,
+            "location": 0.0,
+            "comment": 48.6,
+            "visit_signature_data": 100.0,
+            "pending": 56.7,
+            "is_fulfilled": 0.0,
+            "visit_status": 100.0,
+            "delivery_route": 100.0,
+            "is_storefront_created": 0.0,
+            "is_cron_created": 0.0,
+            "is_template_created": 0.0,
+            "client_account": 0.0,
+            "client_since": 0.0,
+            "client_first_visit": 0.0,
+            "reg_datetime": 84.0,
+            "reg_signature_data": 100.0,
+            "client_first": 0.0,
+            "client_middle": 96.1,
+            "client_last": 0.0,
+            "client_phone": 7.3,
+            "client_email": 44.8,
+            "street_address": 3.0,
+            "unit_no": 67.8,
+            "city": 3.0,
+            "county": 3.0,
+            "state": 3.0,
+            "country": 100.0,
+            "postal_code": 3.0,
+            "inventory_credit_tier": 100.0,
+            "credit_total": 0.0,
+            "visit_created_at": 0.0,
+            "visit_modified_at": 0.0,
+            "visit_created_by": 0.0,
+            "visit_modified_by": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0,
+            "organization_id": 0.0,
+            "member_count": 0.0,
+            "business_name": 100.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 1000.0,
+                "orig_client_id": 1000.0,
+                "orig_visit_id": 1000.0,
+                "orig_registration_id": 160.0,
+                "orig_address_id": 970.0,
+                "orig_location_id": 1000.0,
+                "credit_total": 1000.0,
+                "visit_created_by": 1000.0,
+                "visit_modified_by": 1000.0,
+                "created_by": 1000.0,
+                "modified_by": 1000.0,
+                "organization_id": 1000.0,
+                "member_count": 1000.0
+            },
+            "mean": {
+                "id": 120291.625,
+                "orig_client_id": 941.096,
+                "orig_visit_id": 1004.168,
+                "orig_registration_id": 168.35,
+                "orig_address_id": 933.7422680412371,
+                "orig_location_id": 2.963,
+                "credit_total": 0.0,
+                "visit_created_by": 120976.091,
+                "visit_modified_by": 114524.359,
+                "created_by": 0.0,
+                "modified_by": 0.0,
+                "organization_id": 745.0,
+                "member_count": 2.539
+            },
+            "std": {
+                "id": 1278.2741345807394,
+                "orig_client_id": 524.2638776393025,
+                "orig_visit_id": 1595.5541842666864,
+                "orig_registration_id": 61.85956910056984,
+                "orig_address_id": 458.374617035933,
+                "orig_location_id": 2.1928154139004583,
+                "credit_total": 0.0,
+                "visit_created_by": 12910.231684399156,
+                "visit_modified_by": 12407.098807817481,
+                "created_by": 0.0,
+                "modified_by": 0.0,
+                "organization_id": 0.0,
+                "member_count": 1.779788371308973
+            },
+            "min": {
+                "id": 119721.0,
+                "orig_client_id": 95.0,
+                "orig_visit_id": 212.0,
+                "orig_registration_id": 68.0,
+                "orig_address_id": 99.0,
+                "orig_location_id": 1.0,
+                "credit_total": 0.0,
+                "visit_created_by": 97020.0,
+                "visit_modified_by": 97020.0,
+                "created_by": 0.0,
+                "modified_by": 0.0,
+                "organization_id": 745.0,
+                "member_count": 1.0
+            },
+            "25%": {
+                "id": 119970.75,
+                "orig_client_id": 567.75,
+                "orig_visit_id": 570.75,
+                "orig_registration_id": 116.5,
+                "orig_address_id": 568.25,
+                "orig_location_id": 1.0,
+                "credit_total": 0.0,
+                "visit_created_by": 115572.0,
+                "visit_modified_by": 115572.0,
+                "created_by": 0.0,
+                "modified_by": 0.0,
+                "organization_id": 745.0,
+                "member_count": 1.0
+            },
+            "50%": {
+                "id": 120220.5,
+                "orig_client_id": 998.5,
+                "orig_visit_id": 914.5,
+                "orig_registration_id": 163.0,
+                "orig_address_id": 997.5,
+                "orig_location_id": 2.0,
+                "credit_total": 0.0,
+                "visit_created_by": 115770.0,
+                "visit_modified_by": 115573.0,
+                "created_by": 0.0,
+                "modified_by": 0.0,
+                "organization_id": 745.0,
+                "member_count": 2.0
+            },
+            "75%": {
+                "id": 120470.25,
+                "orig_client_id": 1302.75,
+                "orig_visit_id": 1257.25,
+                "orig_registration_id": 213.5,
+                "orig_address_id": 1309.75,
+                "orig_location_id": 5.0,
+                "credit_total": 0.0,
+                "visit_created_by": 134427.0,
+                "visit_modified_by": 115773.0,
+                "created_by": 0.0,
+                "modified_by": 0.0,
+                "organization_id": 745.0,
+                "member_count": 4.0
+            },
+            "max": {
+                "id": 142870.0,
+                "orig_client_id": 5886.0,
+                "orig_visit_id": 28998.0,
+                "orig_registration_id": 375.0,
+                "orig_address_id": 2796.0,
+                "orig_location_id": 10.0,
+                "credit_total": 0.0,
+                "visit_created_by": 146987.0,
+                "visit_modified_by": 156670.0,
+                "created_by": 0.0,
+                "modified_by": 0.0,
+                "organization_id": 745.0,
+                "member_count": 13.0
+            }
+        },
+        "categorical_summary": {
+            "orig_credit_tier_id": {},
+            "orig_deliveryRoute_id": {},
+            "visit_type": {
+                "Food Pick-up (Standard Package)": 857,
+                "Food Delivery (Bergen County SOUTH)": 70,
+                "Food Delivery (Bergen County NORTH)": 62,
+                "Food Delivery (Passaic County)": 9,
+                "Food Pick-up (Thanksgiving Package)": 1
+            },
+            "location": {
+                "-Englewood-": 413,
+                "-Saddle Brook-": 207,
+                "-Hackensack-": 153,
+                "Home Delivery Program": 120,
+                "-Mahwah-": 71
+            },
+            "comment": {
+                "DINNERS FOR SENIORS": 15,
+                "cat food": 14,
+                "BRINGING HH INFO": 10,
+                "dog food": 10,
+                "Bergen Promise Care Manager to pick up": 7
+            },
+            "visit_signature_data": {},
+            "pending": {
+                "False": 433
+            },
+            "visit_status": {},
+            "delivery_route": {},
+            "client_account": {
+                "644-795108": 3,
+                "448-284703": 2,
+                "207-430169": 2,
+                "762-353796": 2,
+                "649-894183": 2
+            },
+            "client_since": {
+                "2023-10-02": 157,
+                "2023-10-03": 127,
+                "2023-10-04": 122,
+                "2023-10-05": 99,
+                "2023-09-29": 73
+            },
+            "client_first_visit": {
+                "2023-10-04": 182,
+                "2023-10-06": 162,
+                "2023-10-03": 156,
+                "2023-10-05": 120,
+                "2023-10-02": 116
+            },
+            "reg_signature_data": {},
+            "client_first": {
+                "Courtney": 30,
+                "Anthony": 21,
+                "Michael": 18,
+                "Mark": 18,
+                "John": 17
+            },
+            "client_middle": {
+                "Frederick": 3,
+                "Michael": 3,
+                "James": 2,
+                "Lisa": 2,
+                "David": 2
+            },
+            "client_last": {
+                "Smith": 21,
+                "Johnson": 18,
+                "Walker": 17,
+                "Jones": 16,
+                "Clark": 15
+            },
+            "client_phone": {
+                "367-616-4688x52483": 6,
+                "507.896.6597": 3,
+                "666.222.5354x03760": 3,
+                "001-573-386-1471x70982": 3,
+                "429.936.9661": 3
+            },
+            "client_email": {
+                "kkline@example.net": 4,
+                "pzamora@example.org": 3,
+                "hbrown@example.com": 2,
+                "gerald90@example.net": 2,
+                "dgarcia@example.com": 2
+            },
+            "street_address": {
+                "1220 Hardin Shores": 18,
+                "74709 Christina Mills": 3,
+                "43102 Jack Route": 3,
+                "50713 Williams Ranch": 3,
+                "962 Emily Circles": 3
+            },
+            "unit_no": {
+                "44444": 27,
+                "1596": 24,
+                "61660": 9,
+                "645": 5,
+                "03075": 5
+            },
+            "city": {
+                "Englewood": 115,
+                "Hackensack": 101,
+                "Garfield": 86,
+                "Teaneck": 72,
+                "Bergenfield": 55
+            },
+            "county": {
+                "Bergen County": 909,
+                "Passaic County": 55,
+                "Bergen": 2,
+                "Hudson County": 2,
+                "Sussex County": 1
+            },
+            "state": {
+                "NJ": 969,
+                "NY": 1
+            },
+            "country": {},
+            "postal_code": {
+                "07631": 116,
+                "07601": 101,
+                "07026": 84,
+                "07666": 72,
+                "07621": 55
+            },
+            "inventory_credit_tier": {},
+            "business_name": {}
+        }
+    },
+    "inventory_group": {
+        "shape": {
+            "rows": 9,
+            "columns": 10
+        },
+        "columns": [
+            "id",
+            "name",
+            "is_visit",
+            "is_receive",
+            "is_active",
+            "sort_order",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 9,
+                "missing_%": 0.0
+            },
+            "name": {
+                "dtype": "object",
+                "unique_values": 9,
+                "missing_%": 0.0
+            },
+            "sort_order": {
+                "dtype": "int64",
+                "unique_values": 9,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 9,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 6,
+                "missing_%": 0.0
+            },
+            "is_visit": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "is_active": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "is_receive": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "name": 0.0,
+            "is_visit": 0.0,
+            "is_receive": 0.0,
+            "is_active": 0.0,
+            "sort_order": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 9.0,
+                "sort_order": 9.0,
+                "created_by": 9.0,
+                "modified_by": 9.0
+            },
+            "mean": {
+                "id": 8.11111111111111,
+                "sort_order": 4.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "std": {
+                "id": 2.934469476943168,
+                "sort_order": 2.7386127875258306,
+                "created_by": 0.0,
+                "modified_by": 0.0
+            },
+            "min": {
+                "id": 4.0,
+                "sort_order": 0.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "25%": {
+                "id": 6.0,
+                "sort_order": 2.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "50%": {
+                "id": 8.0,
+                "sort_order": 4.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "75%": {
+                "id": 10.0,
+                "sort_order": 6.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "max": {
+                "id": 13.0,
+                "sort_order": 8.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            }
+        },
+        "categorical_summary": {
+            "name": {
+                "Weekend Snack Pack": 1,
+                "Fruit Cup (individual serving) (96 ct) Case": 1,
+                "Milk Box (48 ct) Case": 1,
+                "Juice Box (individual serving) (24 ct) Case": 1,
+                "Cereal (cold, individual serving) (96 ct) Case": 1
+            }
+        }
+    },
+    "inventory_group_item": {
+        "shape": {
+            "rows": 17,
+            "columns": 8
+        },
+        "columns": [
+            "id",
+            "inventory_group_id",
+            "inventory_item_id",
+            "quantity",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 17,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 12,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 12,
+                "missing_%": 0.0
+            },
+            "inventory_item_id": {
+                "dtype": "int64",
+                "unique_values": 10,
+                "missing_%": 0.0
+            },
+            "inventory_group_id": {
+                "dtype": "int64",
+                "unique_values": 9,
+                "missing_%": 0.0
+            },
+            "quantity": {
+                "dtype": "int64",
+                "unique_values": 6,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "inventory_group_id": 0.0,
+            "inventory_item_id": 0.0,
+            "quantity": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 17.0,
+                "inventory_group_id": 17.0,
+                "inventory_item_id": 17.0,
+                "quantity": 17.0,
+                "created_by": 17.0,
+                "modified_by": 17.0
+            },
+            "mean": {
+                "id": 17.11764705882353,
+                "inventory_group_id": 6.176470588235294,
+                "inventory_item_id": 205.7058823529412,
+                "quantity": 3452.9411764705883,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "std": {
+                "id": 5.266430870869479,
+                "inventory_group_id": 2.963007216445124,
+                "inventory_item_id": 13.882384097671917,
+                "quantity": 5967.423820948494,
+                "created_by": 0.0,
+                "modified_by": 0.0
+            },
+            "min": {
+                "id": 9.0,
+                "inventory_group_id": 4.0,
+                "inventory_item_id": 158.0,
+                "quantity": 100.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "25%": {
+                "id": 13.0,
+                "inventory_group_id": 4.0,
+                "inventory_item_id": 205.0,
+                "quantity": 100.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "50%": {
+                "id": 17.0,
+                "inventory_group_id": 4.0,
+                "inventory_item_id": 207.0,
+                "quantity": 100.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "75%": {
+                "id": 21.0,
+                "inventory_group_id": 8.0,
+                "inventory_item_id": 209.0,
+                "quantity": 4800.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "max": {
+                "id": 27.0,
+                "inventory_group_id": 13.0,
+                "inventory_item_id": 232.0,
+                "quantity": 23000.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            }
+        },
+        "categorical_summary": {}
+    },
+    "inventory_group_location_manifest": {
+        "shape": {
+            "rows": 0,
+            "columns": 8
+        },
+        "columns": [
+            "id",
+            "inventory_group_id",
+            "location_id",
+            "quantity",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "inventory_group_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "location_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "quantity": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "created_at": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "modified_at": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "created_by": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "modified_by": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            }
+        },
+        "missing_values_percent": {
+            "id": NaN,
+            "inventory_group_id": NaN,
+            "location_id": NaN,
+            "quantity": NaN,
+            "created_at": NaN,
+            "modified_at": NaN,
+            "created_by": NaN,
+            "modified_by": NaN
+        },
+        "numeric_summary": {},
+        "categorical_summary": {
+            "id": {},
+            "inventory_group_id": {},
+            "location_id": {},
+            "quantity": {},
+            "created_at": {},
+            "modified_at": {},
+            "created_by": {},
+            "modified_by": {}
+        }
+    },
+    "inventory_item": {
+        "shape": {
+            "rows": 716,
+            "columns": 31
+        },
+        "columns": [
+            "id",
+            "inventory_item_type_id",
+            "item_number",
+            "name",
+            "value",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by",
+            "weight",
+            "unit",
+            "sort_order",
+            "is_active",
+            "is_visit",
+            "description",
+            "limit_per_visit",
+            "symbol_type",
+            "icon",
+            "credit_price",
+            "is_store",
+            "background_color",
+            "is_kiosk",
+            "out_of_stock_threshold",
+            "reorder_threshold",
+            "import_id",
+            "agency_item_number",
+            "temperature",
+            "is_locker",
+            "show_locker",
+            "default_tare_weight",
+            "choice_value"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 716,
+                "missing_%": 0.0
+            },
+            "item_number": {
+                "dtype": "object",
+                "unique_values": 716,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 716,
+                "missing_%": 0.0
+            },
+            "sort_order": {
+                "dtype": "int64",
+                "unique_values": 716,
+                "missing_%": 0.0
+            },
+            "name": {
+                "dtype": "object",
+                "unique_values": 712,
+                "missing_%": 0.0
+            },
+            "value": {
+                "dtype": "float64",
+                "unique_values": 342,
+                "missing_%": 0.0
+            },
+            "weight": {
+                "dtype": "float64",
+                "unique_values": 97,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 72,
+                "missing_%": 0.0
+            },
+            "inventory_item_type_id": {
+                "dtype": "int64",
+                "unique_values": 26,
+                "missing_%": 0.0
+            },
+            "unit": {
+                "dtype": "object",
+                "unique_values": 8,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 7,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 4,
+                "missing_%": 0.0
+            },
+            "background_color": {
+                "dtype": "object",
+                "unique_values": 4,
+                "missing_%": 97.63
+            },
+            "out_of_stock_threshold": {
+                "dtype": "int64",
+                "unique_values": 3,
+                "missing_%": 0.0
+            },
+            "is_active": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "description": {
+                "dtype": "object",
+                "unique_values": 2,
+                "missing_%": 99.72
+            },
+            "is_visit": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "is_kiosk": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "is_store": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "credit_price": {
+                "dtype": "float64",
+                "unique_values": 1,
+                "missing_%": 22.21
+            },
+            "symbol_type": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 97.63
+            },
+            "choice_value": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "reorder_threshold": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "default_tare_weight": {
+                "dtype": "float64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "is_locker": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "limit_per_visit": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "icon": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "temperature": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "agency_item_number": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "import_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "show_locker": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "inventory_item_type_id": 0.0,
+            "item_number": 0.0,
+            "name": 0.0,
+            "value": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0,
+            "weight": 0.0,
+            "unit": 0.0,
+            "sort_order": 0.0,
+            "is_active": 0.0,
+            "is_visit": 0.0,
+            "description": 99.72,
+            "limit_per_visit": 100.0,
+            "symbol_type": 97.63,
+            "icon": 100.0,
+            "credit_price": 22.21,
+            "is_store": 0.0,
+            "background_color": 97.63,
+            "is_kiosk": 0.0,
+            "out_of_stock_threshold": 0.0,
+            "reorder_threshold": 0.0,
+            "import_id": 100.0,
+            "agency_item_number": 100.0,
+            "temperature": 100.0,
+            "is_locker": 0.0,
+            "show_locker": 100.0,
+            "default_tare_weight": 0.0,
+            "choice_value": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 716.0,
+                "inventory_item_type_id": 716.0,
+                "value": 716.0,
+                "created_by": 716.0,
+                "modified_by": 716.0,
+                "weight": 716.0,
+                "sort_order": 716.0,
+                "credit_price": 557.0,
+                "out_of_stock_threshold": 716.0,
+                "reorder_threshold": 716.0,
+                "default_tare_weight": 716.0,
+                "choice_value": 716.0
+            },
+            "mean": {
+                "id": 422.0684357541899,
+                "inventory_item_type_id": 58.31843575418994,
+                "value": 21.6981843575419,
+                "created_by": 117896.1033519553,
+                "modified_by": 110545.32122905029,
+                "weight": 13.353212290502793,
+                "sort_order": 357.5,
+                "credit_price": 0.0,
+                "out_of_stock_threshold": -2999558.1675977656,
+                "reorder_threshold": 0.0,
+                "default_tare_weight": 0.0,
+                "choice_value": 1.0
+            },
+            "std": {
+                "id": 210.89846974496163,
+                "inventory_item_type_id": 9.009505209673806,
+                "value": 99.88540039507,
+                "created_by": 11336.14457914918,
+                "modified_by": 6011.874746648906,
+                "weight": 13.183240526730858,
+                "sort_order": 206.83568357515102,
+                "credit_price": 0.0,
+                "out_of_stock_threshold": 80255221.70145138,
+                "reorder_threshold": 0.0,
+                "default_tare_weight": 0.0,
+                "choice_value": 0.0
+            },
+            "min": {
+                "id": 55.0,
+                "inventory_item_type_id": 46.0,
+                "value": 0.0,
+                "created_by": 97021.0,
+                "modified_by": 97020.0,
+                "weight": 0.0,
+                "sort_order": 0.0,
+                "credit_price": 0.0,
+                "out_of_stock_threshold": -2147483648.0,
+                "reorder_threshold": 0.0,
+                "default_tare_weight": 0.0,
+                "choice_value": 1.0
+            },
+            "25%": {
+                "id": 239.75,
+                "inventory_item_type_id": 49.0,
+                "value": 0.0,
+                "created_by": 113214.0,
+                "modified_by": 113214.0,
+                "weight": 1.0,
+                "sort_order": 178.75,
+                "credit_price": 0.0,
+                "out_of_stock_threshold": 0.0,
+                "reorder_threshold": 0.0,
+                "default_tare_weight": 0.0,
+                "choice_value": 1.0
+            },
+            "50%": {
+                "id": 424.5,
+                "inventory_item_type_id": 56.0,
+                "value": 8.0,
+                "created_by": 113214.0,
+                "modified_by": 113214.0,
+                "weight": 10.0,
+                "sort_order": 357.5,
+                "credit_price": 0.0,
+                "out_of_stock_threshold": 0.0,
+                "reorder_threshold": 0.0,
+                "default_tare_weight": 0.0,
+                "choice_value": 1.0
+            },
+            "75%": {
+                "id": 604.25,
+                "inventory_item_type_id": 70.0,
+                "value": 25.82,
+                "created_by": 132980.0,
+                "modified_by": 113214.0,
+                "weight": 22.0,
+                "sort_order": 536.25,
+                "credit_price": 0.0,
+                "out_of_stock_threshold": 0.0,
+                "reorder_threshold": 0.0,
+                "default_tare_weight": 0.0,
+                "choice_value": 1.0
+            },
+            "max": {
+                "id": 784.0,
+                "inventory_item_type_id": 72.0,
+                "value": 2220.0,
+                "created_by": 144514.0,
+                "modified_by": 113215.0,
+                "weight": 75.0,
+                "sort_order": 715.0,
+                "credit_price": 0.0,
+                "out_of_stock_threshold": 0.0,
+                "reorder_threshold": 0.0,
+                "default_tare_weight": 0.0,
+                "choice_value": 1.0
+            }
+        },
+        "categorical_summary": {
+            "item_number": {
+                "000001": 1,
+                "000002": 1,
+                "000003": 1,
+                "000004": 1,
+                "000005": 1
+            },
+            "name": {
+                "Coffee": 2,
+                "Tea": 2,
+                "(SNACK PACK) beef ravioli": 2,
+                "Water Raspberry Lemonade": 2,
+                "Standard Package": 1
+            },
+            "unit": {
+                "Case": 402,
+                "Pounds": 126,
+                "Each": 71,
+                "Bag": 63,
+                "Box": 24
+            },
+            "description": {
+                "<p>Contains:<br />- 30-40lb box of shelf-stable groceries<br />- frozen protein (e.g., chicken, beef)<br />- fresh produce (e.g., potatoes)<br />- dairy products (e.g., eggs, cheese, butter)<br />- other items, as available</p>": 1,
+                "<p>The Dinners4Seniors program provides senior guests with 4 additional servings of lean protein and frozen vegetables.</p>": 1
+            },
+            "limit_per_visit": {},
+            "symbol_type": {
+                "image": 17
+            },
+            "icon": {},
+            "background_color": {
+                "#D6B5D0": 8,
+                "#A2D47F": 4,
+                "#000000": 4,
+                "#0094FE": 1
+            },
+            "import_id": {},
+            "agency_item_number": {},
+            "temperature": {},
+            "show_locker": {}
+        }
+    },
+    "inventory_item_code": {
+        "shape": {
+            "rows": 158,
+            "columns": 9
+        },
+        "columns": [
+            "id",
+            "inventory_item_id",
+            "code_number",
+            "description",
+            "createdBy",
+            "modifiedBy",
+            "modifiedAt",
+            "createdAt",
+            "inventory_group_id"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 158,
+                "missing_%": 0.0
+            },
+            "createdAt": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 158,
+                "missing_%": 0.0
+            },
+            "modifiedAt": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 158,
+                "missing_%": 0.0
+            },
+            "code_number": {
+                "dtype": "object",
+                "unique_values": 157,
+                "missing_%": 0.63
+            },
+            "inventory_item_id": {
+                "dtype": "float64",
+                "unique_values": 154,
+                "missing_%": 0.63
+            },
+            "modifiedBy": {
+                "dtype": "int64",
+                "unique_values": 4,
+                "missing_%": 0.0
+            },
+            "createdBy": {
+                "dtype": "int64",
+                "unique_values": 4,
+                "missing_%": 0.0
+            },
+            "inventory_group_id": {
+                "dtype": "float64",
+                "unique_values": 1,
+                "missing_%": 99.37
+            },
+            "description": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "inventory_item_id": 0.63,
+            "code_number": 0.63,
+            "description": 100.0,
+            "createdBy": 0.0,
+            "modifiedBy": 0.0,
+            "modifiedAt": 0.0,
+            "createdAt": 0.0,
+            "inventory_group_id": 99.37
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 158.0,
+                "inventory_item_id": 157.0,
+                "createdBy": 158.0,
+                "modifiedBy": 158.0,
+                "inventory_group_id": 1.0
+            },
+            "mean": {
+                "id": 109.63291139240506,
+                "inventory_item_id": 145.28025477707007,
+                "createdBy": 99082.13924050632,
+                "modifiedBy": 99082.13924050632,
+                "inventory_group_id": 13.0
+            },
+            "std": {
+                "id": 45.97664242628692,
+                "inventory_item_id": 73.93299412608347,
+                "createdBy": 15939.223974536053,
+                "modifiedBy": 15939.223974536053,
+                "inventory_group_id": NaN
+            },
+            "min": {
+                "id": 31.0,
+                "inventory_item_id": 55.0,
+                "createdBy": 97021.0,
+                "modifiedBy": 97021.0,
+                "inventory_group_id": 13.0
+            },
+            "25%": {
+                "id": 70.25,
+                "inventory_item_id": 99.0,
+                "createdBy": 97021.0,
+                "modifiedBy": 97021.0,
+                "inventory_group_id": 13.0
+            },
+            "50%": {
+                "id": 109.5,
+                "inventory_item_id": 138.0,
+                "createdBy": 97021.0,
+                "modifiedBy": 97021.0,
+                "inventory_group_id": 13.0
+            },
+            "75%": {
+                "id": 148.75,
+                "inventory_item_id": 177.0,
+                "createdBy": 97021.0,
+                "modifiedBy": 97021.0,
+                "inventory_group_id": 13.0
+            },
+            "max": {
+                "id": 191.0,
+                "inventory_item_id": 597.0,
+                "createdBy": 293135.0,
+                "modifiedBy": 293135.0,
+                "inventory_group_id": 13.0
+            }
+        },
+        "categorical_summary": {
+            "code_number": {
+                "U111491": 1,
+                "000000": 1,
+                "U002": 1,
+                "U363A": 1,
+                "U385": 1
+            },
+            "description": {}
+        }
+    },
+    "inventory_item_location_manifest": {
+        "shape": {
+            "rows": 1000,
+            "columns": 8
+        },
+        "columns": [
+            "id",
+            "inventory_item_id",
+            "location_id",
+            "quantity",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 845,
+                "missing_%": 0.0
+            },
+            "inventory_item_id": {
+                "dtype": "int64",
+                "unique_values": 402,
+                "missing_%": 0.0
+            },
+            "quantity": {
+                "dtype": "float64",
+                "unique_values": 191,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 87,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 15,
+                "missing_%": 0.0
+            },
+            "location_id": {
+                "dtype": "int64",
+                "unique_values": 10,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 10,
+                "missing_%": 0.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "inventory_item_id": 0.0,
+            "location_id": 0.0,
+            "quantity": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 1000.0,
+                "inventory_item_id": 1000.0,
+                "location_id": 1000.0,
+                "quantity": 1000.0,
+                "created_by": 1000.0,
+                "modified_by": 1000.0
+            },
+            "mean": {
+                "id": 773.286,
+                "inventory_item_id": 282.935,
+                "location_id": 6.19,
+                "quantity": 65.84401000000001,
+                "created_by": 116410.696,
+                "modified_by": 131123.654
+            },
+            "std": {
+                "id": 291.4554073241024,
+                "inventory_item_id": 143.02609285804544,
+                "location_id": 2.8241593219710315,
+                "quantity": 278.3725830648954,
+                "created_by": 12876.087007169537,
+                "modified_by": 44139.00228633535
+            },
+            "min": {
+                "id": 271.0,
+                "inventory_item_id": 55.0,
+                "location_id": 1.0,
+                "quantity": -128.0,
+                "created_by": 97020.0,
+                "modified_by": 113214.0
+            },
+            "25%": {
+                "id": 522.75,
+                "inventory_item_id": 158.0,
+                "location_id": 3.0,
+                "quantity": 0.0,
+                "created_by": 113214.0,
+                "modified_by": 113215.0
+            },
+            "50%": {
+                "id": 772.5,
+                "inventory_item_id": 272.0,
+                "location_id": 8.0,
+                "quantity": 0.0,
+                "created_by": 113215.0,
+                "modified_by": 113215.0
+            },
+            "75%": {
+                "id": 1022.25,
+                "inventory_item_id": 402.0,
+                "location_id": 9.0,
+                "quantity": 18.0,
+                "created_by": 113215.0,
+                "modified_by": 144514.0
+            },
+            "max": {
+                "id": 2093.0,
+                "inventory_item_id": 726.0,
+                "location_id": 10.0,
+                "quantity": 3493.0,
+                "created_by": 229497.0,
+                "modified_by": 482590.0
+            }
+        },
+        "categorical_summary": {}
+    },
+    "inventory_item_tag": {
+        "shape": {
+            "rows": 11,
+            "columns": 16
+        },
+        "columns": [
+            "id",
+            "name",
+            "acronym",
+            "background_color",
+            "symbol_type",
+            "icon",
+            "sort_order",
+            "is_filterable",
+            "created_by",
+            "modified_by",
+            "created_at",
+            "modified_at",
+            "is_store",
+            "is_receive",
+            "is_visit",
+            "is_exclusive"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 11,
+                "missing_%": 0.0
+            },
+            "name": {
+                "dtype": "object",
+                "unique_values": 11,
+                "missing_%": 0.0
+            },
+            "acronym": {
+                "dtype": "object",
+                "unique_values": 11,
+                "missing_%": 0.0
+            },
+            "sort_order": {
+                "dtype": "int64",
+                "unique_values": 11,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 11,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 11,
+                "missing_%": 0.0
+            },
+            "background_color": {
+                "dtype": "object",
+                "unique_values": 8,
+                "missing_%": 0.0
+            },
+            "is_filterable": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "is_visit": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "is_receive": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "is_store": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "is_exclusive": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "symbol_type": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "icon": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "name": 0.0,
+            "acronym": 0.0,
+            "background_color": 0.0,
+            "symbol_type": 100.0,
+            "icon": 100.0,
+            "sort_order": 0.0,
+            "is_filterable": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "is_store": 0.0,
+            "is_receive": 0.0,
+            "is_visit": 0.0,
+            "is_exclusive": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 11.0,
+                "sort_order": 11.0,
+                "created_by": 11.0,
+                "modified_by": 11.0
+            },
+            "mean": {
+                "id": 15.0,
+                "sort_order": 5.0,
+                "created_by": 97021.0,
+                "modified_by": 98710.36363636363
+            },
+            "std": {
+                "id": 3.3166247903554,
+                "sort_order": 3.3166247903554,
+                "created_by": 0.0,
+                "modified_by": 5602.98531628858
+            },
+            "min": {
+                "id": 10.0,
+                "sort_order": 0.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "25%": {
+                "id": 12.5,
+                "sort_order": 2.5,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "50%": {
+                "id": 15.0,
+                "sort_order": 5.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "75%": {
+                "id": 17.5,
+                "sort_order": 7.5,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "max": {
+                "id": 20.0,
+                "sort_order": 10.0,
+                "created_by": 97021.0,
+                "modified_by": 115604.0
+            }
+        },
+        "categorical_summary": {
+            "name": {
+                "Vegetarian": 1,
+                "Gluten Free": 1,
+                "Microwave Only": 1,
+                "Baby (age 0-4) in Household": 1,
+                "Child (5-17 Years) in Household": 1
+            },
+            "acronym": {
+                "VEG": 1,
+                "GLF": 1,
+                "MIC": 1,
+                "BAB": 1,
+                "KID": 1
+            },
+            "background_color": {
+                "#FFC107": 2,
+                "#FFEB3BF2": 2,
+                "#FFFFFF": 2,
+                "#4CAF50CC": 1,
+                "#7CF0FFB3": 1
+            },
+            "symbol_type": {},
+            "icon": {}
+        }
+    },
+    "inventory_item_type": {
+        "shape": {
+            "rows": 26,
+            "columns": 12
+        },
+        "columns": [
+            "id",
+            "name",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by",
+            "limit_per_visit",
+            "symbol_type",
+            "icon",
+            "background_color",
+            "sort_order",
+            "weight_calc_type"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 26,
+                "missing_%": 0.0
+            },
+            "name": {
+                "dtype": "object",
+                "unique_values": 26,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 26,
+                "missing_%": 0.0
+            },
+            "sort_order": {
+                "dtype": "float64",
+                "unique_values": 25,
+                "missing_%": 3.85
+            },
+            "background_color": {
+                "dtype": "object",
+                "unique_values": 6,
+                "missing_%": 76.92
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 3,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "symbol_type": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 76.92
+            },
+            "limit_per_visit": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "icon": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "weight_calc_type": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "name": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0,
+            "limit_per_visit": 100.0,
+            "symbol_type": 76.92,
+            "icon": 100.0,
+            "background_color": 76.92,
+            "sort_order": 3.85,
+            "weight_calc_type": 100.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 26.0,
+                "created_by": 26.0,
+                "modified_by": 26.0,
+                "sort_order": 25.0
+            },
+            "mean": {
+                "id": 58.53846153846154,
+                "created_by": 97643.80769230769,
+                "modified_by": 97020.0,
+                "sort_order": 13.0
+            },
+            "std": {
+                "id": 7.716116998754072,
+                "created_by": 3175.9125431186644,
+                "modified_by": 0.0,
+                "sort_order": 7.359800721939872
+            },
+            "min": {
+                "id": 46.0,
+                "created_by": 97020.0,
+                "modified_by": 97020.0,
+                "sort_order": 1.0
+            },
+            "25%": {
+                "id": 52.25,
+                "created_by": 97021.0,
+                "modified_by": 97020.0,
+                "sort_order": 7.0
+            },
+            "50%": {
+                "id": 58.5,
+                "created_by": 97021.0,
+                "modified_by": 97020.0,
+                "sort_order": 13.0
+            },
+            "75%": {
+                "id": 64.75,
+                "created_by": 97021.0,
+                "modified_by": 97020.0,
+                "sort_order": 19.0
+            },
+            "max": {
+                "id": 72.0,
+                "created_by": 113215.0,
+                "modified_by": 97020.0,
+                "sort_order": 25.0
+            }
+        },
+        "categorical_summary": {
+            "name": {
+                "Donation": 1,
+                "Food Package": 1,
+                "Dinners4Seniors": 1,
+                "USDA": 1,
+                "Produce (fresh)": 1
+            },
+            "limit_per_visit": {},
+            "symbol_type": {
+                "image": 6
+            },
+            "icon": {},
+            "background_color": {
+                "#A2D37E": 1,
+                "#0094FF": 1,
+                "#FFA76D": 1,
+                "#000000": 1,
+                "#D6B5D0": 1
+            },
+            "weight_calc_type": {}
+        }
+    },
+    "inventory_items_inventory_item_tags": {
+        "shape": {
+            "rows": 116,
+            "columns": 2
+        },
+        "columns": [
+            "inventoryitem_id",
+            "inventoryitemtag_id"
+        ],
+        "dtype_summary": {
+            "inventoryitem_id": {
+                "dtype": "int64",
+                "unique_values": 115,
+                "missing_%": 0.0
+            },
+            "inventoryitemtag_id": {
+                "dtype": "int64",
+                "unique_values": 8,
+                "missing_%": 0.0
+            }
+        },
+        "missing_values_percent": {
+            "inventoryitem_id": 0.0,
+            "inventoryitemtag_id": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "inventoryitem_id": 116.0,
+                "inventoryitemtag_id": 116.0
+            },
+            "mean": {
+                "inventoryitem_id": 256.0431034482759,
+                "inventoryitemtag_id": 17.82758620689655
+            },
+            "std": {
+                "inventoryitem_id": 102.4755658886444,
+                "inventoryitemtag_id": 1.8475641405302587
+            },
+            "min": {
+                "inventoryitem_id": 60.0,
+                "inventoryitemtag_id": 13.0
+            },
+            "25%": {
+                "inventoryitem_id": 220.75,
+                "inventoryitemtag_id": 18.0
+            },
+            "50%": {
+                "inventoryitem_id": 249.5,
+                "inventoryitemtag_id": 18.0
+            },
+            "75%": {
+                "inventoryitem_id": 316.25,
+                "inventoryitemtag_id": 19.0
+            },
+            "max": {
+                "inventoryitem_id": 752.0,
+                "inventoryitemtag_id": 20.0
+            }
+        },
+        "categorical_summary": {}
+    },
+    "inventory_receive": {
+        "shape": {
+            "rows": 1000,
+            "columns": 16
+        },
+        "columns": [
+            "id",
+            "inventory_source_id",
+            "to_location_id",
+            "from_location_id",
+            "receive_type",
+            "receive_datetime",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by",
+            "comment",
+            "to_inventory_bin_id",
+            "from_inventory_bin_id",
+            "recipient_inventory_source_id",
+            "group_edits_enabled",
+            "is_system"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 999,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 999,
+                "missing_%": 0.0
+            },
+            "receive_datetime": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 550,
+                "missing_%": 0.0
+            },
+            "inventory_source_id": {
+                "dtype": "float64",
+                "unique_values": 15,
+                "missing_%": 56.0
+            },
+            "to_location_id": {
+                "dtype": "float64",
+                "unique_values": 7,
+                "missing_%": 34.8
+            },
+            "from_location_id": {
+                "dtype": "float64",
+                "unique_values": 6,
+                "missing_%": 45.4
+            },
+            "recipient_inventory_source_id": {
+                "dtype": "float64",
+                "unique_values": 6,
+                "missing_%": 68.4
+            },
+            "receive_type": {
+                "dtype": "object",
+                "unique_values": 5,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 5,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 5,
+                "missing_%": 0.0
+            },
+            "comment": {
+                "dtype": "object",
+                "unique_values": 4,
+                "missing_%": 99.6
+            },
+            "is_system": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "to_inventory_bin_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "from_inventory_bin_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "group_edits_enabled": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "inventory_source_id": 56.0,
+            "to_location_id": 34.8,
+            "from_location_id": 45.4,
+            "receive_type": 0.0,
+            "receive_datetime": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0,
+            "comment": 99.6,
+            "to_inventory_bin_id": 100.0,
+            "from_inventory_bin_id": 100.0,
+            "recipient_inventory_source_id": 68.4,
+            "group_edits_enabled": 100.0,
+            "is_system": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 1000.0,
+                "inventory_source_id": 440.0,
+                "to_location_id": 652.0,
+                "from_location_id": 546.0,
+                "created_by": 1000.0,
+                "modified_by": 1000.0,
+                "recipient_inventory_source_id": 316.0
+            },
+            "mean": {
+                "id": 655.227,
+                "inventory_source_id": 148.16136363636363,
+                "to_location_id": 6.964723926380368,
+                "from_location_id": 8.098901098901099,
+                "created_by": 125294.368,
+                "modified_by": 125263.071,
+                "recipient_inventory_source_id": 189.22151898734177
+            },
+            "std": {
+                "id": 294.62935007382566,
+                "inventory_source_id": 64.47728393722969,
+                "to_location_id": 2.593916032660998,
+                "from_location_id": 1.2595756826377558,
+                "created_by": 15294.276064165408,
+                "modified_by": 15286.931345627381,
+                "recipient_inventory_source_id": 12.980631930087235
+            },
+            "min": {
+                "id": 149.0,
+                "inventory_source_id": 20.0,
+                "to_location_id": 1.0,
+                "from_location_id": 1.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0,
+                "recipient_inventory_source_id": 60.0
+            },
+            "25%": {
+                "id": 400.75,
+                "inventory_source_id": 59.0,
+                "to_location_id": 4.0,
+                "from_location_id": 8.0,
+                "created_by": 113215.0,
+                "modified_by": 113215.0,
+                "recipient_inventory_source_id": 190.0
+            },
+            "50%": {
+                "id": 651.5,
+                "inventory_source_id": 190.0,
+                "to_location_id": 8.0,
+                "from_location_id": 8.0,
+                "created_by": 113215.0,
+                "modified_by": 113215.0,
+                "recipient_inventory_source_id": 190.0
+            },
+            "75%": {
+                "id": 911.25,
+                "inventory_source_id": 190.0,
+                "to_location_id": 9.0,
+                "from_location_id": 9.0,
+                "created_by": 144512.0,
+                "modified_by": 144512.0,
+                "recipient_inventory_source_id": 191.0
+            },
+            "max": {
+                "id": 1165.0,
+                "inventory_source_id": 195.0,
+                "to_location_id": 9.0,
+                "from_location_id": 9.0,
+                "created_by": 144514.0,
+                "modified_by": 144514.0,
+                "recipient_inventory_source_id": 194.0
+            }
+        },
+        "categorical_summary": {
+            "receive_type": {
+                "receive": 440,
+                "distribution": 316,
+                "transfer": 198,
+                "trash": 32,
+                "adjustment": 14
+            },
+            "comment": {
+                "food from wegman": 1,
+                "Frank purchased": 1,
+                "Out of Gay Lo\nrd/Bins": 1,
+                "Out Of \n\n\n\n\n\n\n\n\nOut Of Gay lord/bin\n\n\n\ng": 1
+            },
+            "to_inventory_bin_id": {},
+            "from_inventory_bin_id": {},
+            "group_edits_enabled": {}
+        }
+    },
+    "inventory_receive_group": {
+        "shape": {
+            "rows": 0,
+            "columns": 9
+        },
+        "columns": [
+            "id",
+            "inventory_receive_id",
+            "inventory_group_id",
+            "quantity",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by",
+            "comment"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "inventory_receive_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "inventory_group_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "quantity": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "created_at": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "modified_at": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "created_by": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "modified_by": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            },
+            "comment": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": NaN
+            }
+        },
+        "missing_values_percent": {
+            "id": NaN,
+            "inventory_receive_id": NaN,
+            "inventory_group_id": NaN,
+            "quantity": NaN,
+            "created_at": NaN,
+            "modified_at": NaN,
+            "created_by": NaN,
+            "modified_by": NaN,
+            "comment": NaN
+        },
+        "numeric_summary": {},
+        "categorical_summary": {
+            "id": {},
+            "inventory_receive_id": {},
+            "inventory_group_id": {},
+            "quantity": {},
+            "created_at": {},
+            "modified_at": {},
+            "created_by": {},
+            "modified_by": {},
+            "comment": {}
+        }
+    },
+    "inventory_receive_item": {
+        "shape": {
+            "rows": 1000,
+            "columns": 14
+        },
+        "columns": [
+            "id",
+            "inventory_receive_id",
+            "inventory_item_id",
+            "quantity",
+            "unitValue",
+            "unitWeight",
+            "totalValue",
+            "totalWeight",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by",
+            "comment",
+            "inventory_receive_group_id"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "inventory_receive_id": {
+                "dtype": "int64",
+                "unique_values": 748,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 748,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 748,
+                "missing_%": 0.0
+            },
+            "totalWeight": {
+                "dtype": "int64",
+                "unique_values": 423,
+                "missing_%": 0.0
+            },
+            "totalValue": {
+                "dtype": "int64",
+                "unique_values": 345,
+                "missing_%": 0.0
+            },
+            "quantity": {
+                "dtype": "float64",
+                "unique_values": 212,
+                "missing_%": 0.0
+            },
+            "inventory_item_id": {
+                "dtype": "int64",
+                "unique_values": 177,
+                "missing_%": 0.0
+            },
+            "comment": {
+                "dtype": "object",
+                "unique_values": 79,
+                "missing_%": 86.7
+            },
+            "unitWeight": {
+                "dtype": "int64",
+                "unique_values": 64,
+                "missing_%": 0.0
+            },
+            "unitValue": {
+                "dtype": "int64",
+                "unique_values": 51,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 5,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 5,
+                "missing_%": 0.0
+            },
+            "inventory_receive_group_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "inventory_receive_id": 0.0,
+            "inventory_item_id": 0.0,
+            "quantity": 0.0,
+            "unitValue": 0.0,
+            "unitWeight": 0.0,
+            "totalValue": 0.0,
+            "totalWeight": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0,
+            "comment": 86.7,
+            "inventory_receive_group_id": 100.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 1000.0,
+                "inventory_receive_id": 1000.0,
+                "inventory_item_id": 1000.0,
+                "quantity": 1000.0,
+                "unitValue": 1000.0,
+                "unitWeight": 1000.0,
+                "totalValue": 1000.0,
+                "totalWeight": 1000.0,
+                "created_by": 1000.0,
+                "modified_by": 1000.0
+            },
+            "mean": {
+                "id": 1819.124,
+                "inventory_receive_id": 574.674,
+                "inventory_item_id": 205.948,
+                "quantity": 130.768,
+                "unitValue": 2345.29,
+                "unitWeight": 1297.753,
+                "totalValue": 87817.675,
+                "totalWeight": 76556.0,
+                "created_by": 130082.799,
+                "modified_by": 130082.799
+            },
+            "std": {
+                "id": 300.7543412783892,
+                "inventory_receive_id": 265.59616534703025,
+                "inventory_item_id": 101.17251194456513,
+                "quantity": 496.3236134875161,
+                "unitValue": 15753.696342457228,
+                "unitWeight": 1431.7016846063655,
+                "totalValue": 1369115.6747606774,
+                "totalWeight": 1061055.0207665039,
+                "created_by": 15658.175822191988,
+                "modified_by": 15658.175822191988
+            },
+            "min": {
+                "id": 1315.0,
+                "inventory_receive_id": 149.0,
+                "inventory_item_id": 55.0,
+                "quantity": -6864.0,
+                "unitValue": 0.0,
+                "unitWeight": 0.0,
+                "totalValue": -34320000.0,
+                "totalWeight": -27456000.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0
+            },
+            "25%": {
+                "id": 1564.75,
+                "inventory_receive_id": 335.5,
+                "inventory_item_id": 105.0,
+                "quantity": 10.0,
+                "unitValue": 0.0,
+                "unitWeight": 100.0,
+                "totalValue": 0.0,
+                "totalWeight": 1600.0,
+                "created_by": 113215.0,
+                "modified_by": 113215.0
+            },
+            "50%": {
+                "id": 1815.5,
+                "inventory_receive_id": 543.5,
+                "inventory_item_id": 223.5,
+                "quantity": 24.0,
+                "unitValue": 179.0,
+                "unitWeight": 520.0,
+                "totalValue": 3000.0,
+                "totalWeight": 14289.5,
+                "created_by": 144512.0,
+                "modified_by": 144512.0
+            },
+            "75%": {
+                "id": 2071.25,
+                "inventory_receive_id": 810.0,
+                "inventory_item_id": 293.75,
+                "quantity": 88.0,
+                "unitValue": 879.0,
+                "unitWeight": 2400.0,
+                "totalValue": 37318.0,
+                "totalWeight": 50000.0,
+                "created_by": 144512.0,
+                "modified_by": 144512.0
+            },
+            "max": {
+                "id": 4215.0,
+                "inventory_receive_id": 2787.0,
+                "inventory_item_id": 370.0,
+                "quantity": 5670.0,
+                "unitValue": 222000.0,
+                "unitWeight": 6400.0,
+                "totalValue": 17160000.0,
+                "totalWeight": 13728000.0,
+                "created_by": 144514.0,
+                "modified_by": 144514.0
+            }
+        },
+        "categorical_summary": {
+            "comment": {
+                "Leonia event": 7,
+                "moved to the line": 7,
+                "3/26/24 distro": 6,
+                "distro 4/5/24": 6,
+                "distro 4/4/24": 5
+            },
+            "inventory_receive_group_id": {}
+        }
+    },
+    "inventory_source": {
+        "shape": {
+            "rows": 239,
+            "columns": 21
+        },
+        "columns": [
+            "id",
+            "name",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by",
+            "contact_first_name",
+            "contact_last_name",
+            "phone_number",
+            "email_address",
+            "street_address",
+            "unit_no",
+            "city",
+            "county",
+            "state",
+            "country",
+            "postal_code",
+            "import_id",
+            "source_type",
+            "is_active",
+            "sort_order"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 239,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 239,
+                "missing_%": 0.0
+            },
+            "sort_order": {
+                "dtype": "float64",
+                "unique_values": 238,
+                "missing_%": 0.42
+            },
+            "name": {
+                "dtype": "object",
+                "unique_values": 236,
+                "missing_%": 0.0
+            },
+            "contact_first_name": {
+                "dtype": "object",
+                "unique_values": 52,
+                "missing_%": 75.31
+            },
+            "phone_number": {
+                "dtype": "object",
+                "unique_values": 51,
+                "missing_%": 78.66
+            },
+            "city": {
+                "dtype": "object",
+                "unique_values": 48,
+                "missing_%": 56.07
+            },
+            "street_address": {
+                "dtype": "object",
+                "unique_values": 48,
+                "missing_%": 79.92
+            },
+            "contact_last_name": {
+                "dtype": "object",
+                "unique_values": 33,
+                "missing_%": 85.77
+            },
+            "postal_code": {
+                "dtype": "object",
+                "unique_values": 30,
+                "missing_%": 79.08
+            },
+            "email_address": {
+                "dtype": "object",
+                "unique_values": 16,
+                "missing_%": 93.31
+            },
+            "state": {
+                "dtype": "object",
+                "unique_values": 9,
+                "missing_%": 57.32
+            },
+            "county": {
+                "dtype": "object",
+                "unique_values": 8,
+                "missing_%": 83.26
+            },
+            "source_type": {
+                "dtype": "object",
+                "unique_values": 5,
+                "missing_%": 2.93
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 5,
+                "missing_%": 0.0
+            },
+            "country": {
+                "dtype": "object",
+                "unique_values": 4,
+                "missing_%": 82.85
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "unit_no": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 99.58
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "is_active": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "import_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "name": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0,
+            "contact_first_name": 75.31,
+            "contact_last_name": 85.77,
+            "phone_number": 78.66,
+            "email_address": 93.31,
+            "street_address": 79.92,
+            "unit_no": 99.58,
+            "city": 56.07,
+            "county": 83.26,
+            "state": 57.32,
+            "country": 82.85,
+            "postal_code": 79.08,
+            "import_id": 100.0,
+            "source_type": 2.93,
+            "is_active": 0.0,
+            "sort_order": 0.42
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 239.0,
+                "created_by": 239.0,
+                "modified_by": 239.0,
+                "sort_order": 238.0
+            },
+            "mean": {
+                "id": 145.8786610878661,
+                "created_by": 102563.34309623431,
+                "modified_by": 113215.0,
+                "sort_order": 118.5
+            },
+            "std": {
+                "id": 70.10087213316275,
+                "created_by": 8832.840822240265,
+                "modified_by": 0.0,
+                "sort_order": 68.84886830345629
+            },
+            "min": {
+                "id": 20.0,
+                "created_by": 97020.0,
+                "modified_by": 113215.0,
+                "sort_order": 0.0
+            },
+            "25%": {
+                "id": 85.5,
+                "created_by": 97021.0,
+                "modified_by": 113215.0,
+                "sort_order": 59.25
+            },
+            "50%": {
+                "id": 146.0,
+                "created_by": 97021.0,
+                "modified_by": 113215.0,
+                "sort_order": 118.5
+            },
+            "75%": {
+                "id": 206.5,
+                "created_by": 113214.0,
+                "modified_by": 113215.0,
+                "sort_order": 177.75
+            },
+            "max": {
+                "id": 266.0,
+                "created_by": 144514.0,
+                "modified_by": 113215.0,
+                "sort_order": 237.0
+            }
+        },
+        "categorical_summary": {
+            "name": {
+                "Rotary Club Allendale & Saddle River": 2,
+                "Community Church of Glen Rock": 2,
+                "Eastwick College": 2,
+                "Anonymous Donor": 1,
+                "First Presbyterian Church of Ramsey": 1
+            },
+            "contact_first_name": {
+                "Lisa": 3,
+                "Bob": 2,
+                "Debbie": 2,
+                "Linda": 2,
+                "Marybeth": 2
+            },
+            "contact_last_name": {
+                "Golden": 2,
+                "Pingue": 1,
+                "hess": 1,
+                "Goldstein": 1,
+                "Tivanen": 1
+            },
+            "phone_number": {
+                "201 684 8000": 1,
+                "973-900-0266": 1,
+                "8185873757": 1,
+                "732-906-5983": 1,
+                "(201) 644-0760 Ext. 601": 1
+            },
+            "email_address": {
+                "MichealTivenan@wakefern.com": 1,
+                "lgoldstein@reedfoundationforautism.org": 1,
+                "www.driscollfoods.com": 1,
+                "www.gagiuloproduce.com": 1,
+                "Kingslandprimemeats@gmail.com": 1
+            },
+            "street_address": {
+                "PO Box 149": 1,
+                "1300 Rt  17 N": 1,
+                "750-Corporate dr": 1,
+                "7646-56 Canton Drive": 1,
+                "5000 Riverside Drive": 1
+            },
+            "unit_no": {
+                "9300 lee hgwy": 1
+            },
+            "city": {
+                "Mahwah": 13,
+                "Allendale": 8,
+                "Ringwood": 8,
+                "Ridgewood": 6,
+                "Wyckoff": 6
+            },
+            "county": {
+                "Bergen County": 23,
+                "Bergen": 7,
+                "Passaic County": 5,
+                "Middlesex County": 1,
+                "berlington": 1
+            },
+            "state": {
+                "NJ": 92,
+                "nj": 3,
+                "MD": 1,
+                "Nj": 1,
+                "N": 1
+            },
+            "country": {
+                "United States": 38,
+                "Bergen": 1,
+                "USA": 1,
+                "us": 1
+            },
+            "postal_code": {
+                "07430": 8,
+                "07401": 4,
+                "07601": 3,
+                "07446": 3,
+                "07652": 3
+            },
+            "import_id": {},
+            "source_type": {
+                "Corporate": 99,
+                "Civic": 86,
+                "Religious": 31,
+                "Individual": 10,
+                "Internal": 6
+            }
+        }
+    },
+    "location": {
+        "shape": {
+            "rows": 10,
+            "columns": 22
+        },
+        "columns": [
+            "id",
+            "name",
+            "created_at",
+            "modified_at",
+            "created_by",
+            "modified_by",
+            "street_address",
+            "unit_no",
+            "city",
+            "county",
+            "state",
+            "country",
+            "postal_code",
+            "parent_inventory_location_id",
+            "sortOrder",
+            "is_active",
+            "contact_first_name",
+            "contact_last_name",
+            "contact_email",
+            "contact_phone",
+            "location_group_id",
+            "external_api_id"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 10,
+                "missing_%": 0.0
+            },
+            "name": {
+                "dtype": "object",
+                "unique_values": 10,
+                "missing_%": 0.0
+            },
+            "created_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 10,
+                "missing_%": 0.0
+            },
+            "modified_at": {
+                "dtype": "datetime64[ns]",
+                "unique_values": 10,
+                "missing_%": 0.0
+            },
+            "sortOrder": {
+                "dtype": "int64",
+                "unique_values": 9,
+                "missing_%": 0.0
+            },
+            "street_address": {
+                "dtype": "object",
+                "unique_values": 8,
+                "missing_%": 0.0
+            },
+            "postal_code": {
+                "dtype": "object",
+                "unique_values": 6,
+                "missing_%": 0.0
+            },
+            "city": {
+                "dtype": "object",
+                "unique_values": 6,
+                "missing_%": 0.0
+            },
+            "created_by": {
+                "dtype": "int64",
+                "unique_values": 3,
+                "missing_%": 0.0
+            },
+            "state": {
+                "dtype": "object",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "county": {
+                "dtype": "object",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "modified_by": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "is_active": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "unit_no": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "parent_inventory_location_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "country": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "contact_first_name": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "contact_last_name": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "contact_email": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "contact_phone": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "location_group_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "external_api_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "name": 0.0,
+            "created_at": 0.0,
+            "modified_at": 0.0,
+            "created_by": 0.0,
+            "modified_by": 0.0,
+            "street_address": 0.0,
+            "unit_no": 100.0,
+            "city": 0.0,
+            "county": 0.0,
+            "state": 0.0,
+            "country": 100.0,
+            "postal_code": 0.0,
+            "parent_inventory_location_id": 100.0,
+            "sortOrder": 0.0,
+            "is_active": 0.0,
+            "contact_first_name": 100.0,
+            "contact_last_name": 100.0,
+            "contact_email": 100.0,
+            "contact_phone": 100.0,
+            "location_group_id": 100.0,
+            "external_api_id": 100.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 10.0,
+                "created_by": 10.0,
+                "modified_by": 10.0,
+                "sortOrder": 10.0
+            },
+            "mean": {
+                "id": 5.5,
+                "created_by": 80699.3,
+                "modified_by": 97021.0,
+                "sortOrder": 4.6
+            },
+            "std": {
+                "id": 3.0276503540974917,
+                "created_by": 29518.352769647114,
+                "modified_by": 0.0,
+                "sortOrder": 3.0983866769659336
+            },
+            "min": {
+                "id": 1.0,
+                "created_by": 16.0,
+                "modified_by": 97021.0,
+                "sortOrder": 0.0
+            },
+            "25%": {
+                "id": 3.25,
+                "created_by": 80468.0,
+                "modified_by": 97021.0,
+                "sortOrder": 2.25
+            },
+            "50%": {
+                "id": 5.5,
+                "created_by": 88744.5,
+                "modified_by": 97021.0,
+                "sortOrder": 4.5
+            },
+            "75%": {
+                "id": 7.75,
+                "created_by": 97021.0,
+                "modified_by": 97021.0,
+                "sortOrder": 7.0
+            },
+            "max": {
+                "id": 10.0,
+                "created_by": 97021.0,
+                "modified_by": 97021.0,
+                "sortOrder": 9.0
+            }
+        },
+        "categorical_summary": {
+            "name": {
+                "-Englewood-": 1,
+                "-Hackensack-": 1,
+                "-Mahwah-": 1,
+                "-Ringwood-": 1,
+                "-Saddle Brook-": 1
+            },
+            "street_address": {
+                "90 Ridge Road": 2,
+                "224 Midland Ave": 2,
+                "316 First Street": 1,
+                "192 Demarest Avenue": 1,
+                "145 Carletondale Road": 1
+            },
+            "unit_no": {},
+            "city": {
+                "Saddle Brook": 3,
+                "Englewood": 2,
+                "Mahwah": 2,
+                "Hackensack": 1,
+                "Ringwood": 1
+            },
+            "county": {
+                "Bergen County": 9,
+                "Passaic County": 1
+            },
+            "state": {
+                "NJ": 9,
+                "New Jersey": 1
+            },
+            "country": {},
+            "postal_code": {
+                "07663": 3,
+                "07631": 2,
+                "07430": 2,
+                "07601": 1,
+                "07456": 1
+            },
+            "parent_inventory_location_id": {},
+            "contact_first_name": {},
+            "contact_last_name": {},
+            "contact_email": {},
+            "contact_phone": {},
+            "location_group_id": {},
+            "external_api_id": {}
+        }
+    },
+    "visit_answer": {
+        "shape": {
+            "rows": 1000,
+            "columns": 15
+        },
+        "columns": [
+            "id",
+            "client_visit_id",
+            "visit_member_id",
+            "orig_question_answer_id",
+            "orig_question_id",
+            "orig_question_block_id",
+            "orig_picklist__entry_id",
+            "question_type",
+            "question",
+            "question_block_name",
+            "is_privileged",
+            "datatype",
+            "answer",
+            "organization_id",
+            "orig_client_id"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "orig_question_answer_id": {
+                "dtype": "int64",
+                "unique_values": 888,
+                "missing_%": 0.0
+            },
+            "visit_member_id": {
+                "dtype": "float64",
+                "unique_values": 440,
+                "missing_%": 56.0
+            },
+            "client_visit_id": {
+                "dtype": "int64",
+                "unique_values": 308,
+                "missing_%": 0.0
+            },
+            "orig_client_id": {
+                "dtype": "int64",
+                "unique_values": 301,
+                "missing_%": 0.0
+            },
+            "answer": {
+                "dtype": "object",
+                "unique_values": 30,
+                "missing_%": 3.3
+            },
+            "question": {
+                "dtype": "object",
+                "unique_values": 23,
+                "missing_%": 0.0
+            },
+            "orig_question_id": {
+                "dtype": "int64",
+                "unique_values": 21,
+                "missing_%": 0.0
+            },
+            "question_block_name": {
+                "dtype": "object",
+                "unique_values": 10,
+                "missing_%": 0.0
+            },
+            "orig_question_block_id": {
+                "dtype": "int64",
+                "unique_values": 8,
+                "missing_%": 0.0
+            },
+            "datatype": {
+                "dtype": "object",
+                "unique_values": 6,
+                "missing_%": 0.0
+            },
+            "question_type": {
+                "dtype": "object",
+                "unique_values": 3,
+                "missing_%": 0.0
+            },
+            "is_privileged": {
+                "dtype": "bool",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "organization_id": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "orig_picklist__entry_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "client_visit_id": 0.0,
+            "visit_member_id": 56.0,
+            "orig_question_answer_id": 0.0,
+            "orig_question_id": 0.0,
+            "orig_question_block_id": 0.0,
+            "orig_picklist__entry_id": 100.0,
+            "question_type": 0.0,
+            "question": 0.0,
+            "question_block_name": 0.0,
+            "is_privileged": 0.0,
+            "datatype": 0.0,
+            "answer": 3.3,
+            "organization_id": 0.0,
+            "orig_client_id": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 1000.0,
+                "client_visit_id": 1000.0,
+                "visit_member_id": 440.0,
+                "orig_question_answer_id": 1000.0,
+                "orig_question_id": 1000.0,
+                "orig_question_block_id": 1000.0,
+                "organization_id": 1000.0,
+                "orig_client_id": 1000.0
+            },
+            "mean": {
+                "id": 6257148.961,
+                "client_visit_id": 119996.713,
+                "visit_member_id": 229560.6431818182,
+                "orig_question_answer_id": 3546.124,
+                "orig_question_id": 10.232,
+                "orig_question_block_id": 6.142,
+                "organization_id": 745.0,
+                "orig_client_id": 584.1
+            },
+            "std": {
+                "id": 801.726026832796,
+                "client_visit_id": 370.58484285890154,
+                "visit_member_id": 150.79087616992757,
+                "orig_question_answer_id": 13589.05431683345,
+                "orig_question_id": 8.633348754145793,
+                "orig_question_block_id": 2.5644516787049065,
+                "organization_id": 0.0,
+                "orig_client_id": 472.0479607807636
+            },
+            "min": {
+                "id": 6256525.0,
+                "client_visit_id": 119721.0,
+                "visit_member_id": 229311.0,
+                "orig_question_answer_id": 234.0,
+                "orig_question_id": 1.0,
+                "orig_question_block_id": 5.0,
+                "organization_id": 745.0,
+                "orig_client_id": 95.0
+            },
+            "25%": {
+                "id": 6256784.75,
+                "client_visit_id": 119805.0,
+                "visit_member_id": 229421.75,
+                "orig_question_answer_id": 1056.75,
+                "orig_question_id": 4.0,
+                "orig_question_block_id": 5.0,
+                "organization_id": 745.0,
+                "orig_client_id": 286.0
+            },
+            "50%": {
+                "id": 6257048.0,
+                "client_visit_id": 119867.0,
+                "visit_member_id": 229553.5,
+                "orig_question_answer_id": 1360.5,
+                "orig_question_id": 4.0,
+                "orig_question_block_id": 5.0,
+                "organization_id": 745.0,
+                "orig_client_id": 485.5
+            },
+            "75%": {
+                "id": 6257322.5,
+                "client_visit_id": 119928.0,
+                "visit_member_id": 229694.25,
+                "orig_question_answer_id": 1714.5,
+                "orig_question_id": 18.0,
+                "orig_question_block_id": 7.0,
+                "organization_id": 745.0,
+                "orig_client_id": 596.0
+            },
+            "max": {
+                "id": 6262599.0,
+                "client_visit_id": 121605.0,
+                "visit_member_id": 229826.0,
+                "orig_question_answer_id": 117545.0,
+                "orig_question_id": 42.0,
+                "orig_question_block_id": 18.0,
+                "organization_id": 745.0,
+                "orig_client_id": 2473.0
+            }
+        },
+        "categorical_summary": {
+            "orig_picklist__entry_id": {},
+            "question_type": {
+                "Demographic": 440,
+                "RegistrationQuestion": 399,
+                "InterviewQuestion": 161
+            },
+            "question": {
+                "Please choose all that apply": 440,
+                "Number of Adults (18+ Years)": 81,
+                "Number of Children (0-17 Years)": 80,
+                "SSI (Supplemental Security Income) – NOT SOCIAL SECURITY": 32,
+                "QUALIFYING REASON (Please Choose)": 32
+            },
+            "question_block_name": {
+                "Race & Ethnicity": 440,
+                "(OPTIONAL) The Emergency Food Assistance Program (TEFAP) Eligibility": 284,
+                "Household Size": 161,
+                "(OPTIONAL) Referred By": 37,
+                "Non-Discrimination Statement": 31
+            },
+            "datatype": {
+                "multiselect": 440,
+                "boolean": 237,
+                "integer": 161,
+                "contentblock": 128,
+                "string": 31
+            },
+            "answer": {
+                "Hispanic or Latino, ": 204,
+                "No": 194,
+                "White or Caucasian, ": 117,
+                "1": 47,
+                "Yes": 43
+            }
+        }
+    },
+    "visit_budget_item": {
+        "shape": {
+            "rows": 1000,
+            "columns": 9
+        },
+        "columns": [
+            "id",
+            "client_visit_id",
+            "visit_member_id",
+            "orig_budget_item_id",
+            "budget_item_type",
+            "description",
+            "derived_annual_amount",
+            "organization_id",
+            "orig_client_id"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "client_visit_id": {
+                "dtype": "int64",
+                "unique_values": 983,
+                "missing_%": 0.0
+            },
+            "orig_budget_item_id": {
+                "dtype": "int64",
+                "unique_values": 551,
+                "missing_%": 0.0
+            },
+            "orig_client_id": {
+                "dtype": "int64",
+                "unique_values": 541,
+                "missing_%": 0.0
+            },
+            "derived_annual_amount": {
+                "dtype": "object",
+                "unique_values": 248,
+                "missing_%": 0.0
+            },
+            "description": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "budget_item_type": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "organization_id": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "visit_member_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "client_visit_id": 0.0,
+            "visit_member_id": 100.0,
+            "orig_budget_item_id": 0.0,
+            "budget_item_type": 0.0,
+            "description": 0.0,
+            "derived_annual_amount": 0.0,
+            "organization_id": 0.0,
+            "orig_client_id": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 1000.0,
+                "client_visit_id": 1000.0,
+                "orig_budget_item_id": 1000.0,
+                "organization_id": 1000.0,
+                "orig_client_id": 1000.0
+            },
+            "mean": {
+                "id": 222508.5,
+                "client_visit_id": 124184.287,
+                "orig_budget_item_id": 984.314,
+                "organization_id": 745.0,
+                "orig_client_id": 2353.286
+            },
+            "std": {
+                "id": 288.8194360957494,
+                "client_visit_id": 2433.441022881558,
+                "orig_budget_item_id": 1820.2458796729816,
+                "organization_id": 0.0,
+                "orig_client_id": 1260.2036380733923
+            },
+            "min": {
+                "id": 222009.0,
+                "client_visit_id": 119724.0,
+                "orig_budget_item_id": 8.0,
+                "organization_id": 745.0,
+                "orig_client_id": 153.0
+            },
+            "25%": {
+                "id": 222258.75,
+                "client_visit_id": 121978.0,
+                "orig_budget_item_id": 138.75,
+                "organization_id": 745.0,
+                "orig_client_id": 1385.25
+            },
+            "50%": {
+                "id": 222508.5,
+                "client_visit_id": 124366.0,
+                "orig_budget_item_id": 297.5,
+                "organization_id": 745.0,
+                "orig_client_id": 2329.0
+            },
+            "75%": {
+                "id": 222758.25,
+                "client_visit_id": 126349.25,
+                "orig_budget_item_id": 515.0,
+                "organization_id": 745.0,
+                "orig_client_id": 3428.0
+            },
+            "max": {
+                "id": 223008.0,
+                "client_visit_id": 128034.0,
+                "orig_budget_item_id": 9201.0,
+                "organization_id": 745.0,
+                "orig_client_id": 4915.0
+            }
+        },
+        "categorical_summary": {
+            "visit_member_id": {},
+            "budget_item_type": {
+                "Income": 1000
+            },
+            "description": {
+                "Monthly Household Income (Gross/Before Tax) $": 1000
+            },
+            "derived_annual_amount": {
+                "24000": 82,
+                "12000": 57,
+                "18000": 38,
+                "36000": 31,
+                "30000": 27
+            }
+        }
+    },
+    "visit_item": {
+        "shape": {
+            "rows": 1000,
+            "columns": 18
+        },
+        "columns": [
+            "id",
+            "client_visit_id",
+            "visit_member_id",
+            "orig_visit_item_id",
+            "orig_inventory_item_id",
+            "name",
+            "comment",
+            "quantity",
+            "unitValue",
+            "unitWeight",
+            "totalValue",
+            "totalWeight",
+            "unit_credit_price",
+            "total_credit_price",
+            "organization_id",
+            "orig_inventory_item_type_id",
+            "itemType",
+            "orig_client_id"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "client_visit_id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "orig_visit_item_id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "orig_client_id": {
+                "dtype": "int64",
+                "unique_values": 647,
+                "missing_%": 0.0
+            },
+            "name": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "orig_inventory_item_id": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "unitWeight": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "unitValue": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "totalValue": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "quantity": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "total_credit_price": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "organization_id": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "unit_credit_price": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "totalWeight": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "orig_inventory_item_type_id": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "itemType": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "comment": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "visit_member_id": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "client_visit_id": 0.0,
+            "visit_member_id": 100.0,
+            "orig_visit_item_id": 0.0,
+            "orig_inventory_item_id": 0.0,
+            "name": 0.0,
+            "comment": 100.0,
+            "quantity": 0.0,
+            "unitValue": 0.0,
+            "unitWeight": 0.0,
+            "totalValue": 0.0,
+            "totalWeight": 0.0,
+            "unit_credit_price": 0.0,
+            "total_credit_price": 0.0,
+            "organization_id": 0.0,
+            "orig_inventory_item_type_id": 0.0,
+            "itemType": 0.0,
+            "orig_client_id": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 1000.0,
+                "client_visit_id": 1000.0,
+                "orig_visit_item_id": 1000.0,
+                "orig_inventory_item_id": 1000.0,
+                "quantity": 1000.0,
+                "unitValue": 1000.0,
+                "unitWeight": 1000.0,
+                "totalValue": 1000.0,
+                "totalWeight": 1000.0,
+                "unit_credit_price": 1000.0,
+                "total_credit_price": 1000.0,
+                "organization_id": 1000.0,
+                "orig_inventory_item_type_id": 1000.0,
+                "orig_client_id": 1000.0
+            },
+            "mean": {
+                "id": 178621.5,
+                "client_visit_id": 125117.311,
+                "orig_visit_item_id": 947.05,
+                "orig_inventory_item_id": 63.0,
+                "quantity": 1.0,
+                "unitValue": 50.0,
+                "unitWeight": 40.0,
+                "totalValue": 50.0,
+                "totalWeight": 40.0,
+                "unit_credit_price": 0.0,
+                "total_credit_price": 0.0,
+                "organization_id": 745.0,
+                "orig_inventory_item_type_id": 47.0,
+                "orig_client_id": 2675.141
+            },
+            "std": {
+                "id": 288.8194360957494,
+                "client_visit_id": 2873.861163359369,
+                "orig_visit_item_id": 390.36802724697714,
+                "orig_inventory_item_id": 0.0,
+                "quantity": 0.0,
+                "unitValue": 0.0,
+                "unitWeight": 0.0,
+                "totalValue": 0.0,
+                "totalWeight": 0.0,
+                "unit_credit_price": 0.0,
+                "total_credit_price": 0.0,
+                "organization_id": 0.0,
+                "orig_inventory_item_type_id": 0.0,
+                "orig_client_id": 1409.2619395745182
+            },
+            "min": {
+                "id": 178122.0,
+                "client_visit_id": 119722.0,
+                "orig_visit_item_id": 264.0,
+                "orig_inventory_item_id": 63.0,
+                "quantity": 1.0,
+                "unitValue": 50.0,
+                "unitWeight": 40.0,
+                "totalValue": 50.0,
+                "totalWeight": 40.0,
+                "unit_credit_price": 0.0,
+                "total_credit_price": 0.0,
+                "organization_id": 745.0,
+                "orig_inventory_item_type_id": 47.0,
+                "orig_client_id": 137.0
+            },
+            "25%": {
+                "id": 178371.75,
+                "client_visit_id": 122510.75,
+                "orig_visit_item_id": 614.5,
+                "orig_inventory_item_id": 63.0,
+                "quantity": 1.0,
+                "unitValue": 50.0,
+                "unitWeight": 40.0,
+                "totalValue": 50.0,
+                "totalWeight": 40.0,
+                "unit_credit_price": 0.0,
+                "total_credit_price": 0.0,
+                "organization_id": 745.0,
+                "orig_inventory_item_type_id": 47.0,
+                "orig_client_id": 1579.0
+            },
+            "50%": {
+                "id": 178621.5,
+                "client_visit_id": 125460.5,
+                "orig_visit_item_id": 944.5,
+                "orig_inventory_item_id": 63.0,
+                "quantity": 1.0,
+                "unitValue": 50.0,
+                "unitWeight": 40.0,
+                "totalValue": 50.0,
+                "totalWeight": 40.0,
+                "unit_credit_price": 0.0,
+                "total_credit_price": 0.0,
+                "organization_id": 745.0,
+                "orig_inventory_item_type_id": 47.0,
+                "orig_client_id": 2511.0
+            },
+            "75%": {
+                "id": 178871.25,
+                "client_visit_id": 127844.25,
+                "orig_visit_item_id": 1284.25,
+                "orig_inventory_item_id": 63.0,
+                "quantity": 1.0,
+                "unitValue": 50.0,
+                "unitWeight": 40.0,
+                "totalValue": 50.0,
+                "totalWeight": 40.0,
+                "unit_credit_price": 0.0,
+                "total_credit_price": 0.0,
+                "organization_id": 745.0,
+                "orig_inventory_item_type_id": 47.0,
+                "orig_client_id": 3806.25
+            },
+            "max": {
+                "id": 179121.0,
+                "client_visit_id": 129169.0,
+                "orig_visit_item_id": 1628.0,
+                "orig_inventory_item_id": 63.0,
+                "quantity": 1.0,
+                "unitValue": 50.0,
+                "unitWeight": 40.0,
+                "totalValue": 50.0,
+                "totalWeight": 40.0,
+                "unit_credit_price": 0.0,
+                "total_credit_price": 0.0,
+                "organization_id": 745.0,
+                "orig_inventory_item_type_id": 47.0,
+                "orig_client_id": 5346.0
+            }
+        },
+        "categorical_summary": {
+            "visit_member_id": {},
+            "name": {
+                "Standard Package": 1000
+            },
+            "comment": {},
+            "itemType": {
+                "Food Package": 1000
+            }
+        }
+    },
+    "visit_member": {
+        "shape": {
+            "rows": 1000,
+            "columns": 18
+        },
+        "columns": [
+            "id",
+            "client_visit_id",
+            "orig_hhm_id",
+            "first_name",
+            "last_name",
+            "middle_name",
+            "title",
+            "gender",
+            "pronouns",
+            "birthday",
+            "is_primary",
+            "relationship",
+            "id_number",
+            "id_type",
+            "organization_id",
+            "email_address",
+            "phone_number",
+            "orig_client_id"
+        ],
+        "dtype_summary": {
+            "id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "orig_hhm_id": {
+                "dtype": "int64",
+                "unique_values": 1000,
+                "missing_%": 0.0
+            },
+            "birthday": {
+                "dtype": "object",
+                "unique_values": 958,
+                "missing_%": 0.0
+            },
+            "client_visit_id": {
+                "dtype": "int64",
+                "unique_values": 405,
+                "missing_%": 0.0
+            },
+            "orig_client_id": {
+                "dtype": "int64",
+                "unique_values": 405,
+                "missing_%": 0.0
+            },
+            "phone_number": {
+                "dtype": "object",
+                "unique_values": 400,
+                "missing_%": 53.6
+            },
+            "last_name": {
+                "dtype": "object",
+                "unique_values": 315,
+                "missing_%": 0.0
+            },
+            "first_name": {
+                "dtype": "object",
+                "unique_values": 313,
+                "missing_%": 0.0
+            },
+            "email_address": {
+                "dtype": "object",
+                "unique_values": 254,
+                "missing_%": 70.4
+            },
+            "middle_name": {
+                "dtype": "object",
+                "unique_values": 34,
+                "missing_%": 95.5
+            },
+            "relationship": {
+                "dtype": "object",
+                "unique_values": 10,
+                "missing_%": 25.2
+            },
+            "gender": {
+                "dtype": "object",
+                "unique_values": 4,
+                "missing_%": 0.0
+            },
+            "is_primary": {
+                "dtype": "bool",
+                "unique_values": 2,
+                "missing_%": 0.0
+            },
+            "id_type": {
+                "dtype": "object",
+                "unique_values": 1,
+                "missing_%": 8.8
+            },
+            "organization_id": {
+                "dtype": "int64",
+                "unique_values": 1,
+                "missing_%": 0.0
+            },
+            "title": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "pronouns": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            },
+            "id_number": {
+                "dtype": "object",
+                "unique_values": 0,
+                "missing_%": 100.0
+            }
+        },
+        "missing_values_percent": {
+            "id": 0.0,
+            "client_visit_id": 0.0,
+            "orig_hhm_id": 0.0,
+            "first_name": 0.0,
+            "last_name": 0.0,
+            "middle_name": 95.5,
+            "title": 100.0,
+            "gender": 0.0,
+            "pronouns": 100.0,
+            "birthday": 0.0,
+            "is_primary": 0.0,
+            "relationship": 25.2,
+            "id_number": 100.0,
+            "id_type": 8.8,
+            "organization_id": 0.0,
+            "email_address": 70.4,
+            "phone_number": 53.6,
+            "orig_client_id": 0.0
+        },
+        "numeric_summary": {
+            "count": {
+                "id": 1000.0,
+                "client_visit_id": 1000.0,
+                "orig_hhm_id": 1000.0,
+                "organization_id": 1000.0,
+                "orig_client_id": 1000.0
+            },
+            "mean": {
+                "id": 229831.697,
+                "client_visit_id": 119948.227,
+                "orig_hhm_id": 3570.411,
+                "organization_id": 745.0,
+                "orig_client_id": 605.886
+            },
+            "std": {
+                "id": 744.2623701804805,
+                "client_visit_id": 293.04934292434166,
+                "orig_hhm_id": 5972.465955505201,
+                "organization_id": 0.0,
+                "orig_client_id": 262.2572665873681
+            },
+            "min": {
+                "id": 229311.0,
+                "client_visit_id": 119721.0,
+                "orig_hhm_id": 156.0,
+                "organization_id": 745.0,
+                "orig_client_id": 95.0
+            },
+            "25%": {
+                "id": 229560.75,
+                "client_visit_id": 119857.75,
+                "orig_hhm_id": 930.75,
+                "organization_id": 745.0,
+                "orig_client_id": 403.0
+            },
+            "50%": {
+                "id": 229810.5,
+                "client_visit_id": 119940.0,
+                "orig_hhm_id": 1467.0,
+                "organization_id": 745.0,
+                "orig_client_id": 596.0
+            },
+            "75%": {
+                "id": 230060.25,
+                "client_visit_id": 120036.0,
+                "orig_hhm_id": 2019.5,
+                "organization_id": 745.0,
+                "orig_client_id": 858.0
+            },
+            "max": {
+                "id": 251507.0,
+                "client_visit_id": 128516.0,
+                "orig_hhm_id": 32211.0,
+                "organization_id": 745.0,
+                "orig_client_id": 1623.0
+            }
+        },
+        "categorical_summary": {
+            "first_name": {
+                "Michael": 22,
+                "Courtney": 20,
+                "Sandra": 16,
+                "David": 15,
+                "James": 14
+            },
+            "last_name": {
+                "Smith": 23,
+                "Martinez": 21,
+                "Williams": 18,
+                "Foster": 17,
+                "Meyer": 15
+            },
+            "middle_name": {
+                "Michael": 4,
+                "Patricia": 3,
+                "Ian": 3,
+                "Benjamin": 3,
+                "Robert": 2
+            },
+            "title": {},
+            "gender": {
+                "Female": 572,
+                "Male": 421,
+                "Prefer not to answer": 5,
+                "Other": 2
+            },
+            "pronouns": {},
+            "birthday": {
+                "1988-06-11": 3,
+                "1965-05-10": 3,
+                "1980-04-05": 3,
+                "2016-03-12": 2,
+                "2001-08-11": 2
+            },
+            "relationship": {
+                "Self": 404,
+                "Child": 206,
+                "Spouse": 81,
+                "Grandchild": 24,
+                "Parent": 11
+            },
+            "id_number": {},
+            "id_type": {
+                "Not Available": 912
+            },
+            "email_address": {
+                "gibsonrichard@example.org": 7,
+                "rachel20@example.net": 7,
+                "gloversarah@example.org": 5,
+                "markstout@example.org": 5,
+                "timothycarr@example.com": 4
+            },
+            "phone_number": {
+                "714-432-9640": 8,
+                "(682)208-2750x62818": 7,
+                "884.793.2056": 7,
+                "(262)223-8629x818": 5,
+                "742.383.1277": 5
+            }
+        }
+    }
+}

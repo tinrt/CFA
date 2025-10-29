@@ -1,0 +1,11 @@
+{
+    "table": "inventory_item_type",
+    "column": "created_at",
+    "total_records": 26,
+    "unique_days": 5,
+    "first_date": "2023-07-24",
+    "last_date": "2024-05-27",
+    "average_records_per_day": 5.2,
+    "peak_day": "2023-07-24",
+    "peak_count": 20
+}

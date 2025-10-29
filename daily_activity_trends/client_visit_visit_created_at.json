@@ -1,0 +1,11 @@
+{
+    "table": "client_visit",
+    "column": "visit_created_at",
+    "total_records": 1000,
+    "unique_days": 25,
+    "first_date": "2023-09-18",
+    "last_date": "2024-03-22",
+    "average_records_per_day": 40.0,
+    "peak_day": "2023-10-02",
+    "peak_count": 160
+}

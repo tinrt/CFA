@@ -1,0 +1,15 @@
+
+cat a gitignore that ignores ds store files
+
+
+Recognized macOS file exclusion request and prepared artifact.
+
+
+
+I've created a .gitignore file that ignores .DS_Store files along with other common macOS system files and thumbnails. You can save this as .gitignore in your repository root.
+
+If you only want the bare minimum, just the first line (.DS_Store) is sufficient, but the other entries are commonly ignored system files that you'll probably want
+
+
+.env
+

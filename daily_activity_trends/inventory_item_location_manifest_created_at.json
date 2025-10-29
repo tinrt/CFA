@@ -1,0 +1,11 @@
+{
+    "table": "inventory_item_location_manifest",
+    "column": "created_at",
+    "total_records": 1000,
+    "unique_days": 126,
+    "first_date": "2023-07-24",
+    "last_date": "2025-04-22",
+    "average_records_per_day": 7.94,
+    "peak_day": "2024-03-22",
+    "peak_count": 43
+}
